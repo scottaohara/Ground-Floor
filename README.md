@@ -27,7 +27,7 @@ While the point of this framework is to give basic styling to HTML without the n
 
 ### View it Live
 
-At <a href="http://groudfloor.neocities.org/">http://groudfloor.neocities.org/</a>
+At <a href="http://groundfloor.neocities.org//">http://groudfloor.neocities.org/</a>
 
 ### Built With
 * Mixture.io
