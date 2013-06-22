@@ -1,0 +1,29 @@
+// ----------------------------------------------------------------
+//		Basic Setups for Navigation Elements
+// ----------------------------------------------------------------
+
+// The main navigation class to be placed on the <nav>
+nav{
+  background:rgba(255,255,255,.3);
+  
+  &> a:last-child{border-right:none} // if not contained in li, kills last border right
+  
+	ul, ol{font-size:0; list-style:none; margin:0; padding:0}
+	li{
+	  display:inline-block;
+	  font-size:18px;
+	  margin:0;
+	  
+  	&:last-child a{border-right:none}
+	}
+	a{
+	  border-right:1px solid rgba(100,100,100,.1); 
+	  display:inline-block;
+	  padding:$spacing $spacing*3; 
+	  text-decoration:underline;
+	  
+		&:hover{
+		  text-decoration:none;
+		}
+	}
+}

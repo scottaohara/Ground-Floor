@@ -1,0 +1,21 @@
+// Import Fonts 
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700italic,600,400italic,300italic,600italic);
+
+// Variables and Mixins
+	@import '_helper-sass/project-Vars';	  // misc. layout and additional styling vars
+	@import '_base-sass/mixins';			      // reusable code bases
+	
+// Base HTML Values
+	@import '_base-sass/base';				      // standardizes the base styling of HTML elements
+	@import '_base-sass/typography';		    // font sizing/families/styling
+	@import '_base-sass/tables';			      // Base styling for table elements
+	@import '_base-sass/navs';				      // Base nav element & children styling
+	@import '_base-sass/forms';				      // Base form element & children styling
+
+// Easy Classes for extra styling
+  @import '_helper-sass/helper';			    // Classes to extend others.  Mini-modules -- these need to be separated out?
+	@import '_helper-sass/layout';			    // Layout Classes (flexible grids)
+	@import '_helper-sass/buttons';			    // Button Classes (also e
+
+// Styling Version
+  @import '_versions-sass/version1';      // Version 1 Styling

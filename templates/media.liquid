@@ -1,0 +1,42 @@
+{% block content %}
+<div>
+<h1>Media Content</h1>
+<p>
+  Basic styling for common media elements
+</p>
+<hr />
+  <div class="row">
+    <div class="col col-25">
+      <h3>Audio</h3>
+      
+      <audio controls></audio>
+    </div>
+    
+    <div class="col col-25">
+      <h3>Video</h3>
+      
+      <video controls></video>
+    </div>
+    
+    <div class="col col-25">
+      <h3>Img</h3>
+      
+      <img src="http://lorempixel.com/100/100" alt="a test image" />
+      <a href="#!" title="image inside of an anchor tag">
+        <img src="http://lorempixel.com/100/100" alt="a test image in a link" /> 
+      </a>
+    </div>
+    
+    <div class="col col-25">
+      <h3>Figure</h3>
+  
+      <figure>
+        <img src="http://lorempixel.com/400/200" alt="test image" />
+        <figcaption>
+          Figcaption content
+        </figcaption>
+      </figure>
+    </div>
+  </div> <!-- end .row -->
+</div>
+{% endblock %}

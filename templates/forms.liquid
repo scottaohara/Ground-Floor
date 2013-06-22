@@ -1,0 +1,150 @@
+{% block content %} 
+<div>
+
+<h1>Form Elements</h1>
+<p>
+  Basic Styling for various form elements.
+</p>
+<hr />
+
+<form class="form-Container">
+
+<h3>Base Input Fields</h3>
+
+<div class="row">
+<fieldset class="col col-50">        
+  <label for="input-Text">Input - Normal Text</label><br />
+  <input id="input-Text" type="text" placeholder="Write Text Here" />
+  <br />
+  
+  <label for="input-Text">Input - Text w/Data List</label><br />
+  <input id="input-Text-dl" list="fav-color"  type="text" placeholder="Choose your fav. color" />
+  <datalist id="fav-color">
+    <option value="Red"></option> 
+    <option value="Orange"></option> 
+    <option value="Yellow"></option>
+    <option value="Green"></option>
+    <option value="Blue"></option>
+    <option value="Purple"></option> 
+  </datalist>
+  <br />
+  
+  <label for="input-Email">Input - Email</label><br />
+  <input id="input-Email" type="email" placeholder="Enter Email" />
+  <br />
+  
+  <label for="input-Password">Input - Password</label><br />
+  <input id="input-Password" type="password" placeholder="Enter Password" />
+  <br />
+  
+  <label for="input-Url">Input - Web Address</label><br />
+  <input id="input-Url" type="url" placeholder="Enter Web Address" />
+  <br />
+  
+  <label for="input-tel">Input - Phone Number</label><br />
+  <input id="input-tel" type="tel" placeholder="555.555.5555" />
+  <br />
+  
+  <label for="input-Search">Input - Search</label><br />
+  <input id="input-Search" class="input-Area" type="search" placeholder="Search for..." />
+  <input type="submit" value="Search" />
+  <br />
+  
+  <label for="input-TextArea">Text Area</label><br />
+  <textarea id="input-TextArea" class="text-Area"></textarea>
+  <br />
+  
+  <h4>Selections</h4>
+  <label for="base-Select">Default Select</label><br />
+  <select id="base-Select">
+       <option>Select an Item...</option>
+       <option>First Item</option>
+       <option>Second Item</option>
+       <option>Third Item</option>
+       <option>Fourth Item Fourth Item Fourth Item</option>
+   </select>
+   
+<br />
+
+  <label for="multi-Select">Multiple select field</label><br />
+  <select id="multi-Select" multiple size="5">
+     <option>Option 1</option>
+     <option>Option 2</option>
+     <option>Option 3</option>
+     <option>Option 4</option>
+     <option>Option 5</option>
+  </select>
+  
+</fieldset>
+
+<fieldset class="col col-50">
+  <label for="input-Text-Disabled">Disabled Text Input</label><br />
+  <input id="input-Text-Disabled" type="text" value="Disabled text input" disabled="disabled" />
+  <br />
+  <label for="input-Text-Readonly">Readonly Text Input</label><br />
+  <input id="input-Text-Readonly" type="text" value="Readonly text input" readonly="readonly">
+  <br />
+  <label for="input-Required">Required Input</label><br />
+  <input id="input-Required" type="text" placeholder="Placeholder Text" required="required" />
+  <br />
+  <label for="input-File">File Input</label><br />
+  <input id="input-File" type="file" />
+  <br />
+  
+   
+  <h4>Check Boxes / Radios</h4>
+   <label for="check-1">Check Box 1</label>
+   <input type="checkbox" id="check-1" />
+   <br />
+   <label for="check-2">Check Box 2</label>
+   <input type="checkbox" id="check-2" />
+   <br />
+   <br />
+   <label for="radio-1">Radio Option 1</label>
+   <input type="radio" id="radio-1" name="radio-Set" />
+   <br />
+   <label for="radio-2">Radio Option 2</label>
+   <input type="radio" id="radio-2" name="radio-Set" />
+   <br />
+   <label for="radio-3">Radio Option 3</label>
+   <input type="radio" id="radio-3" name="radio-Set" />
+   
+<br />
+
+<h4>Button Inputs</h4>
+  <label>Input - Reset</label><br />
+  <input type="reset" value="Reset" />
+  <br />
+  <label>Input - Submit &amp; Button</label><br />
+  <input type="submit" value="Submit" />
+  <br />
+  <label>Button</label><br />
+  <button name="Button" type="submit" value="Button Example">Button</button>
+
+</fieldset>
+
+</div> <!-- end .row -->
+
+<hr />
+
+<h3>Additional Inputs</h3>
+<p>These inputs will default to input type=text styling and functionality in browsers that don't support support them yet.</p>
+
+  <label for="num-Spin">Number Spinbox</label><br />
+  <input id="num-Spin" type="number" min="0" max="20" step="1" value="5" />
+  <br />
+  <label for="num-Date">Date: mm/dd/yyy</label><br />
+  <input id="num-Date" type="date" />
+  <br />
+  <label for="num-Time">Time: 12:00 PM</label><br />
+  <input id="num-Time" type="time" />
+  <br />
+  <label for="color-Picker">Hex Color</label><br />
+  <input id="color-Picker" type="color" />
+  <br />
+
+</form>
+
+
+</div>
+{% endblock %}

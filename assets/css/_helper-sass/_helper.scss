@@ -1,0 +1,18 @@
+// ----------------------------------------------------------------
+//		Text Helpers
+// ----------------------------------------------------------------
+// Align Text
+.txt-Center	{text-align:center}
+.txt-Left	{text-align:left}
+.txt-Right	{text-align:right}
+.txt-Just	{text-align:justify}
+
+// ----------------------------------------------------------------
+//		Floats & Clearing
+// ----------------------------------------------------------------
+.float-Left	  {float:left}
+.float-Right  {float:right}
+.float-None	  {float:none}
+.clear		  {clear:both}
+.clearfix	  {@include clearfix}
+.overflow	  {overflow:hidden}

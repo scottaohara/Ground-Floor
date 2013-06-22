@@ -1,0 +1,245 @@
+{% block content %} 
+<div>
+
+<h1>Layout Classes</h1>
+<p>
+  A basic, flexible grid layout that can be implemented to make your HTML pages not just a long list of stacked content.
+</p>
+<hr />
+
+
+<div class="row">
+<div class="col col-75">
+<h3>Rows with Responsive Columns</h3>
+<div class="row">
+	<div class="col col-50">
+		<div class="block">
+			<p>
+				1/2 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-50">
+		<div class="row">
+			<div class="col col-33">
+				<div class="block">
+					<p>
+						1/3 width inside 1/2 col
+					</p>
+				</div>
+			</div>
+			<div class="col col-33">
+				<div class="block">
+					<p>
+						1/3 width inside 1/2 col
+					</p>
+				</div>
+			</div>
+			<div class="col col-33">
+				<div class="block">
+					<p>
+						1/3 width inside 1/2 col
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col col-33">
+		<div class="block">
+			<p>
+				1/3 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-33">
+		<div class="block">
+			<p>
+				1/3 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-33">
+		<div class="block">
+			<p>
+				1/3 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col col-33">
+		<div class="block">
+			<p>
+				1/3 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-66">
+		<div class="block">
+			<p>
+				2/3 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="row">
+	<div class="col col-80">
+		<div class="block">
+			<p>
+				4/5 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-20">
+		<div class="block">
+			<p>
+				1/5 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col col-75">
+		<div class="block">
+			<p>
+				3/4 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-25">
+		<div class="block">
+			<p>
+				1/4 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col col-60">
+		<div class="block">
+			<p>
+				3/5 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-40">
+		<div class="block">
+			<p>
+				2/5 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col col-50">
+		<div class="block">
+			<p>
+				1/2 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-50">
+		<div class="block">
+			<p>
+				1/2 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col col-25">
+		<div class="block">
+			<p>
+				1/4 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-25">
+		<div class="block">
+			<p>
+				1/4 width column
+			</p>
+		</div>
+	</div>
+	<div class="col col-50">
+		<div class="block">
+			<p>
+				1/2 width column
+			</p>
+		</div>
+	</div>
+</div>
+
+</div><!-- end col-75 -->
+<div class="col col-25">
+  <p>
+    To create the grids to the left, you will need to use the following markup:
+  </p>
+  
+  <h3>HTML</h3>
+  <code style="font-size:12px">
+    &lt;div class="row"><br />
+      &lt;div class="col col-##"><br />
+        Content goes here<br />
+      &lt;/div><br />
+    &lt;/div>
+  </code>
+  
+  <h3>CSS</h3>
+  <code style="font-size:12px">
+  /* Contains the columns */<br />
+    .row{<br />
+       &nbsp;&nbsp;margin-left:-20px;<br />
+    	 &nbsp;&nbsp;margin-bottom:$20px;<br />
+    	 &nbsp;&nbsp;*zoom:1;<br />
+    }<br />
+    .row:before,<br />
+    .row:after{<br />
+      &nbsp;&nbsp;content:"";<br />
+      &nbsp;&nbsp;display:table;<br />
+    }
+    <br />
+    .row:after{<br />
+      &nbsp;&nbsp;clear:both;<br />
+    }<br />
+    <br />
+    /* Base Column */<br />
+    .col{<br />
+      &nbsp;&nbsp;float:left;<br />
+    	&nbsp;&nbsp;margin-bottom:0!important;<br />
+    	&nbsp;&nbsp;padding-left:20px<br />
+    	&nbsp;&nbsp;position:relative;<br />
+    	&nbsp;&nbsp;width:100%;<br />
+    }<br />
+    <br />
+    /* Size the columns in the row */<br />
+    .col-90	{width:90%}<br />
+    .col-80 {width:80%}<br />
+    .col-75 {width:75%}<br />
+    .col-66 {width:66.6666%}<br />
+    .col-60 {width:60%}<br />
+    .col-50 {width:50%}<br />
+    .col-40 {width:40%}<br />
+    .col-33 {width:33.3333%}<br />
+    .col-25 {width:25%}<br />
+    .col-20 {width:20%}<br />
+    .col-10 {width:10%}
+  </code>
+  
+</div>
+</div> <!-- end .row -->
+
+</div>
+{% endblock %}

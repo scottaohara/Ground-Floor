@@ -1,0 +1,62 @@
+// ----------------------------------------------------------------
+//		Basic Style Settings / Resetings
+// ----------------------------------------------------------------
+
+// Make a smarter Box Model
+*, *:before, *:after{@include box-sizing(border-box)}
+
+// Just to make sure the HTML doesn't act like a bitch
+html{overflow-y:scroll; min-height:100%}
+
+// Reset the Standard Tags
+body, blockquote, h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, img, 
+legend, table, th, td, caption, hr, dl{border:0; margin:0; outline:0; padding:0}
+
+// Default body text styling
+body{
+	font:{
+		family:$brand;
+		size:100%;
+		weight:300;
+	}
+	line-height:1.3;
+}
+
+// Give HTML5 elements block display, which is not defined in ie8/9
+article, aside, details, figure, figcaption, footer,
+header, main, nav, section, summary{
+  display:block;
+  &>:last-child{margin-bottom:0}
+}
+
+// Makes hidden actually [hidden] in IE 8/9
+[hidden]{display:none}
+
+// Consistent Margins
+blockquote, form, h1, h2, h3, h4, h5, h6, li, p, table, dl, samp, code, kbd, address{margin-bottom:$spacing*2}
+
+// Consistent Padding
+header, main, article, section, div, footer, form{
+  padding:$spacing*5;
+  
+  header, main, article, section, div, footer, form{
+    padding:0
+  }
+}
+
+// Easy re-styling for <hr /> tags
+hr{border-top:1px solid #ddd; display:block; height:1px; margin:$spacing*2 0}
+
+// Highlight Text Selection
+::-moz-selection{background:$c-Brand-1; color:$c-Light; text-shadow:none}
+::selection		{background:$c-Brand-1; color:$c-Light; text-shadow:none}
+
+// Links
+a{
+	color:$c-Link;
+	&:hover, &:active{color:darken($c-Link, 20%)}
+	&:visited{color:darken($c-Link, 50%)}
+}
+
+@import 'base-Media';		// Styling for base media elements
+@import 'base-Form';		// Styling for base form elements
