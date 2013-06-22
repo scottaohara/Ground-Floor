@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------
 //		Basic Styling for Buttons
 // ----------------------------------------------------------------
-.btn, %btn{
+.btn, %btn, .btn:visited{
     background:$c-Dark; 
     @include border-radius($radius);
     color:$c-Lighter;
@@ -68,7 +68,7 @@
 // ----------------------------------------------------------------
 // Coloring
 // ----------------------------------------------------------------
-.btn-Action, button, input[type=submit]{
+.btn-Action, .btn-Action:visited, button, input[type=submit]{
   @extend %btn; 
   background:$c-Btn-1;
   
@@ -77,7 +77,7 @@
   }
 }
    
-.btn-Action-2{
+.btn-Action-2, .btn-Action-2:visited{
   @extend %btn; 
   background:$c-Btn-2;
   
@@ -86,7 +86,7 @@
   }
 }
     
-.btn-Action-3{
+.btn-Action-3, .btn-Action-3:visited{
   @extend %btn; 
   background:$c-Btn-3;
   
