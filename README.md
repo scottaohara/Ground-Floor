@@ -1,13 +1,36 @@
-# NeoCities Basic Styling
+# Ground Floor NC (NeoCities Basic Styling)
 
-<hr />
+## What is Ground Floor NC?
 
-Just want to build a simple HTML website that doesn't look like it's just a simple HTML website?
+Beyond normalizing, but not super-stylized-HTML either:
 
-Use this stylesheet to pretty up those basic HTML tags.
+Ground Floor is the prettying up of HTML tags so that even if you never add a single class, or touch a line of CSS your HTML won't look like a jumble of browser presets or bland looking text.
 
-<hr />
-To Come:
+
+### HTML Styling
+
+From headings to tables, forms to HTML5 elements, Ground Floor standardizes and lightly extends basic styling for many HTML elements.
+
+    * Form Elements
+    * Media Elements
+    * Nav Elements
+    * Table Elements
+    * Text Elements
+
+### Basic Classes
+
+While the point of this framework is to give basic styling to HTML without the need for CSS knowledge, for those that do have a basic knowledge of CSS, and want to add just a bit extra to their websites, here are a few basic classes with examples.
+
+    * CSS Buttons
+    * CSS Layout
+    * CSS Helper Classes
+
+### View it Live
+
+<a href="http://groudfloor.neocities.org/">http://groudfloor.neocities.org/</a>
+
+### To Come:
+
 * Various color versions
 * More helper classes
-* General Clean up
+
