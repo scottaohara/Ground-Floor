@@ -1,4 +1,4 @@
-# Ground Floor NC (NeoCities Basic Styling)
+# Ground Floor NC <br />(NeoCities Basic Styling)
 
 ## What is Ground Floor NC?
 
