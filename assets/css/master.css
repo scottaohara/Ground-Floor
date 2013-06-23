@@ -1,4 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700italic,600,400italic,300italic,600italic);
+/*
+  ************************************************************************
+  * Ground Floor NC(NeoCities)
+  * by Scott O'Hara - @scottohara - bleachedgraphics.com
+  * v 1.1 - June 23, 2013
+  *************************************************************************
+*/
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -60,7 +67,7 @@ a {
   a:hover, a:active {
     color: #22516d; }
   a:visited {
-    color: black; }
+    color: #163446; }
 
 img {
   color: red;
@@ -284,7 +291,7 @@ label {
   display: inline-block;
   margin-bottom: 4px; }
 
-input[type=text], textarea, input[type=date], input[type=time], input:not([type=submit]):not([type=reset]) {
+input[type=text], textarea, input[type=date], input[type=time], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
   background: white;
   border: 1px solid #cccccc;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -292,15 +299,15 @@ input[type=text], textarea, input[type=date], input[type=time], input:not([type=
   margin-bottom: 8px;
   padding: 8px 4px;
   width: 50%; }
-  input[type=text]:focus, textarea:focus, input[type=date]:focus, input[type=time]:focus, input:not([type=submit]):not([type=reset]):focus {
+  input[type=text]:focus, textarea:focus, input[type=date]:focus, input[type=time]:focus, input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):focus {
     background: #f8f8f8;
     border: 1px solid #50B6D5;
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25) inset;
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25) inset;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25) inset; }
-  input[type=text][disabled], textarea[disabled], input[disabled][type=date], input[disabled][type=time], input:not([type=submit]):not([type=reset])[disabled] {
+  input[type=text][disabled], textarea[disabled], input[disabled][type=date], input[disabled][type=time], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"])[disabled] {
     background: #ddd; }
-  input[type=text][required], textarea[required], input[required][type=date], input[required][type=time], input:not([type=submit]):not([type=reset])[required] {
+  input[type=text][required], textarea[required], input[required][type=date], input[required][type=time], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"])[required] {
     border-color: red; }
 
 textarea {
@@ -422,8 +429,8 @@ input[type=date], input[type=time] {
   .block > :last-child {
     margin-bottom: 0; }
 
-.btn, .btn-Small, .btn-Large, .btn-XLarge, .btn-Wide, .btn-Action, .btn-Action:visited, button, input[type=submit], .btn-Action-2, .btn-Action-2:visited, .btn-Action-3, .btn-Action-3:visited, .btn-Neg, input[type=reset], .btn-Disable,
-.btn-Disable:hover, .btn-Square, .btn-Round, .btn:visited {
+.btn, .btn-Small, .btn-Large, .btn-XLarge, .btn-Wide, .btn-Action, button, input[type=submit], .btn-Action-2, .btn-Action-2:visited, .btn-Action-3, .btn-Action-3:visited, .btn-Neg, input[type=reset], .btn-Disable,
+.btn-Disable:hover, .btn-Square, .btn-Round, a.btn {
   background: #444444;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -445,14 +452,16 @@ input[type=date], input[type=time] {
   transition: all 0.25s ease-in-out 0s;
   vertical-align: middle;
   -webkit-appearance: none; }
-  .btn.btn-Pad, .btn-Pad.btn-Small, .btn-Pad.btn-Large, .btn-Pad.btn-XLarge, .btn-Pad.btn-Wide, .btn-Pad.btn-Action, button.btn-Pad, input.btn-Pad[type=submit], .btn-Pad.btn-Action-2, .btn-Pad.btn-Action-3, .btn-Pad.btn-Neg, input.btn-Pad[type=reset], .btn-Pad.btn-Disable, .btn-Pad.btn-Square, .btn-Pad.btn-Round, .btn:visited.btn-Pad {
+  .btn.btn-Pad, .btn-Pad.btn-Small, .btn-Pad.btn-Large, .btn-Pad.btn-XLarge, .btn-Pad.btn-Wide, .btn-Pad.btn-Action, button.btn-Pad, input.btn-Pad[type=submit], .btn-Pad.btn-Action-2, .btn-Pad.btn-Action-3, .btn-Pad.btn-Neg, input.btn-Pad[type=reset], .btn-Pad.btn-Disable, .btn-Pad.btn-Square, .btn-Pad.btn-Round, a.btn.btn-Pad {
     padding: 8px 16px; }
-  .btn:hover, .btn:active, .btn-Small:hover, .btn-Large:hover, .btn-XLarge:hover, .btn-Wide:hover, .btn-Action:hover, button:hover, input[type=submit]:hover, .btn-Action-2:hover, .btn-Action-3:hover, .btn-Neg:hover, input[type=reset]:hover, .btn-Disable:hover, .btn-Square:hover, .btn-Round:hover, .btn-Small:active, .btn-Large:active, .btn-XLarge:active, .btn-Wide:active, .btn-Action:active, button:active, input[type=submit]:active, .btn-Action-2:active, .btn-Action-3:active, .btn-Neg:active, input[type=reset]:active, .btn-Disable:active, .btn-Square:active, .btn-Round:active, .btn:visited:hover, .btn:visited:active {
+  .btn:hover, .btn:active, .btn-Small:hover, .btn-Large:hover, .btn-XLarge:hover, .btn-Wide:hover, .btn-Action:hover, button:hover, input[type=submit]:hover, .btn-Action-2:hover, .btn-Action-3:hover, .btn-Neg:hover, input[type=reset]:hover, .btn-Disable:hover, .btn-Square:hover, .btn-Round:hover, .btn-Small:active, .btn-Large:active, .btn-XLarge:active, .btn-Wide:active, .btn-Action:active, button:active, input[type=submit]:active, .btn-Action-2:active, .btn-Action-3:active, .btn-Neg:active, input[type=reset]:active, .btn-Disable:active, .btn-Square:active, .btn-Round:active, a.btn:hover, a.btn:active {
     background: #101010;
     -moz-box-shadow: 0 0 6px rgba(255, 255, 255, 0.5) inset;
     -webkit-box-shadow: 0 0 6px rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5) inset;
     color: #f8f8f8; }
+  .btn:visited, .btn-Small:visited, .btn-Large:visited, .btn-XLarge:visited, .btn-Wide:visited, .btn-Action:visited, button:visited, input[type=submit]:visited, .btn-Action-2:visited, .btn-Action-3:visited, .btn-Neg:visited, input[type=reset]:visited, .btn-Disable:visited, .btn-Square:visited, .btn-Round:visited, a.btn:visited {
+    color: #f8f8f8 !important; }
 
 .btn-Small {
   font-size: 0.75em;
@@ -475,9 +484,9 @@ input[type=date], input[type=time] {
 .btn-Wide {
   display: block; }
 
-.btn-Action, .btn-Action:visited, button, input[type=submit] {
+.btn-Action, button, input[type=submit] {
   background: #3b8bba; }
-  .btn-Action:hover, .btn-Action:visited:hover, button:hover, input[type=submit]:hover {
+  .btn-Action:hover, button:hover, input[type=submit]:hover {
     background: #296080; }
 
 .btn-Action-2, .btn-Action-2:visited {

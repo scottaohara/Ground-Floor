@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------
 //		Basic Styling for Buttons
 // ----------------------------------------------------------------
-.btn, %btn, .btn:visited{
+.btn, %btn, a.btn{
     background:$c-Dark; 
     @include border-radius($radius);
     color:$c-Lighter;
@@ -23,7 +23,11 @@
     &:hover, &:active{
         background:$c-Darker; 
         @include box-shadow($bs-6);
-        color:$c-Lighter
+        color:$c-Lighter;
+    }
+    
+    &:visited{
+      color:$c-Lighter!important;
     }
 }
 
@@ -32,7 +36,7 @@
 // Sizing
 // ----------------------------------------------------------------
 .btn-Small{
-	@extend %btn; 
+	@extend %btn;
 	font-size:$tiny; 
 	padding:$spacing $spacing*2;
 	
@@ -68,7 +72,7 @@
 // ----------------------------------------------------------------
 // Coloring
 // ----------------------------------------------------------------
-.btn-Action, .btn-Action:visited, button, input[type=submit]{
+.btn-Action, button, input[type=submit]{
   @extend %btn; 
   background:$c-Btn-1;
   

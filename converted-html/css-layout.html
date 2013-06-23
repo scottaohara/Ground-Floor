@@ -3,17 +3,21 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
-    <title>Example Title</title>
+    <title>Ground Floor NC - Basic HTML Styling for default NeoCities Websites</title>
     
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="A CSS framework, built with sass, to style HTML tags for simple web building on NeoCities.org" />
+    <meta name="keywords" content="framework, css, scss, html, website building, html elements, helper classes" />
     
-    <link href="assets/css/master.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="master.css" rel="stylesheet" type="text/css" media="all"/>
     <style>
       /* Styling for Ground Floor Website Only Delete*/
       .hp header nav{display:none}
       header nav{text-align:center}
       header nav li{font-size:14px}
+      .show-Code{display:none;}
+      .show-Code code{font-size:12px}
+      .hp #show-Code{display:none}
+      #show-Code{position:fixed; right:0; top:0; z-index:5}
     </style>
     
     <!--[if lt IE 9]> 
@@ -27,6 +31,19 @@
   <a href="index.html" title="Back to the home page">Ground Floor</a>
 </h1>
 <h4>Basic styling for out-of-the-box NeoCities websites</h4>
+
+<a href="#!" title="click to show code examples for each element" class="btn-Small btn-Action-3" id="show-Code">
+  <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
+</a>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#show-Code').click(function(){
+      $('.show-Code').slideToggle('fast');
+      $('.hc').toggle();
+    })
+  });
+</script>
 
       <nav>
 	<ul>
@@ -246,6 +263,9 @@
 
 </div><!-- end col-75 -->
 <div class="col col-25">
+  <h3 class="show-Code" style="color:#f00">
+    The code is right here
+  </h3>
   <p>
     To create the grids to the left, you will need to use the following markup:
   </p>
@@ -253,9 +273,9 @@
   <h3>HTML</h3>
   <code style="font-size:12px">
     &lt;div class="row"><br />
-      &lt;div class="col col-##"><br />
-        Content goes here<br />
-      &lt;/div><br />
+      &nbsp;&nbsp;&lt;div class="col col-##"><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;Content goes here<br />
+      &nbsp;&nbsp;&lt;/div><br />
     &lt;/div>
   </code>
   
@@ -313,8 +333,6 @@
 </p>
 
     </footer>
-    
-    </div> <!-- end .page -->
   
   </body>
 </html>

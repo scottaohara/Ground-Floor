@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
-    <title>{% block title %}Example Title{% endblock %}</title>
+    <title>{% block title %}Ground Floor NC - Basic HTML Styling for default NeoCities Websites{% endblock %}</title>
     
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -14,6 +14,10 @@
       .hp header nav{display:none}
       header nav{text-align:center}
       header nav li{font-size:14px}
+      .show-Code{display:none;}
+      .show-Code code{font-size:12px}
+      .hp #show-Code{display:none}
+      #show-Code{position:fixed; right:0; top:0; z-index:5}
     </style>
     
     <!--[if lt IE 9]> 
@@ -34,8 +38,6 @@
     <footer>
       {% include "footer" %}
     </footer>
-    
-    </div> <!-- end .page -->
   
   </body>
 </html>

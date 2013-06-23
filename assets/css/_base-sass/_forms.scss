@@ -18,8 +18,7 @@ legend{
 /* Text Input Areas & Labels */
 label{font-weight:400; cursor:pointer; display:inline-block; margin-bottom:$spacing}
 
-input[type=text], input:not([type=submit]):not([type=reset]){
-   // &[type=text], &[type=url], &[type=email], &[type=tel], &[type=password], &[type=search], &[type=file], &[type=number]{
+input[type=text], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]){
       background:$c-White; 
       border:1px solid $c-Border;
       font-family:$arial; 
@@ -39,7 +38,6 @@ input[type=text], input:not([type=submit]):not([type=reset]){
       &[required]{
         border-color:$c-Required;
       }
-//    }
 }
 
 textarea{

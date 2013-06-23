@@ -3,17 +3,21 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
-    <title>Example Title</title>
+    <title>Ground Floor NC - Basic HTML Styling for default NeoCities Websites</title>
     
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="A CSS framework, built with sass, to style HTML tags for simple web building on NeoCities.org" />
+    <meta name="keywords" content="framework, css, scss, html, website building, html elements, helper classes" />
     
-    <link href="assets/css/master.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="master.css" rel="stylesheet" type="text/css" media="all"/>
     <style>
       /* Styling for Ground Floor Website Only Delete*/
       .hp header nav{display:none}
       header nav{text-align:center}
       header nav li{font-size:14px}
+      .show-Code{display:none;}
+      .show-Code code{font-size:12px}
+      .hp #show-Code{display:none}
+      #show-Code{position:fixed; right:0; top:0; z-index:5}
     </style>
     
     <!--[if lt IE 9]> 
@@ -27,6 +31,19 @@
   <a href="index.html" title="Back to the home page">Ground Floor</a>
 </h1>
 <h4>Basic styling for out-of-the-box NeoCities websites</h4>
+
+<a href="#!" title="click to show code examples for each element" class="btn-Small btn-Action-3" id="show-Code">
+  <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
+</a>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#show-Code').click(function(){
+      $('.show-Code').slideToggle('fast');
+      $('.hc').toggle();
+    })
+  });
+</script>
 
       <nav>
 	<ul>
@@ -60,46 +77,35 @@
     </header>
     
     <main>
-      
+       
 <div>
-<h1>Media Content</h1>
+
+<h1>Helper Classes</h1>
 <p>
-  Basic styling for common media elements
+  Some basic helper classes to let you do a little more with your HTML.
 </p>
 <hr />
-  <div class="row">
-    <div class="col col-25">
-      <h3>Audio</h3>
-      
-      <audio controls></audio>
-    </div>
-    
-    <div class="col col-25">
-      <h3>Video</h3>
-      
-      <video controls></video>
-    </div>
-    
-    <div class="col col-25">
-      <h3>Img</h3>
-      
-      <img src="http://lorempixel.com/100/100" alt="a test image" />
-      <a href="#!" title="image inside of an anchor tag">
-        <img src="http://lorempixel.com/100/100" alt="a test image in a link" /> 
-      </a>
-    </div>
-    
-    <div class="col col-25">
-      <h3>Figure</h3>
-  
-      <figure>
-        <img src="http://lorempixel.com/400/200" alt="test image" />
-        <figcaption>
-          Figcaption content
-        </figcaption>
-      </figure>
-    </div>
-  </div> <!-- end .row -->
+
+<h3>CSS</h3>
+<h3 class="show-Code" style="color:#f00">
+    The code is right here
+  </h3>
+<code style="font-size:12px">
+.txt-Center	{text-align:center}<br />
+.txt-Left	{text-align:left}<br />
+.txt-Right	{text-align:right}<br />
+.txt-Just	{text-align:justify}<br />
+<br />
+<br />
+.float-Left	  {float:left}<br />
+.float-Right  {float:right}<br />
+.float-None	  {float:none}<br />
+.clear		  {clear:both}<br />
+.clearfix	  {@include clearfix}<br />
+</code>
+
+</div> <!-- end .row -->
+
 </div>
 
     </main>
@@ -110,8 +116,6 @@
 </p>
 
     </footer>
-    
-    </div> <!-- end .page -->
   
   </body>
 </html>
