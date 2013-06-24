@@ -115,7 +115,8 @@
   background:$c-Disabled; 
   border:1px solid #eee; 
   color:$c-Dark; 
-  cursor:default 
+  cursor:default;
+  &:visited{color:$c-Dark}
 }
 
 
