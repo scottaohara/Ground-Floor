@@ -506,7 +506,7 @@ input[type=date], input[type=time] {
     background: #848484; }
 
 .btn-Disable,
-.btn-Disable:hover {
+.btn-Disable:hover, .btn-Disable:visited {
   background: #fafafa;
   border: 1px solid #eee;
   color: #444444;
