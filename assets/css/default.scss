@@ -1,9 +1,14 @@
 /*
-  ************************************************************************
+  *******************************************************************************************************
   * Ground Floor NC(NeoCities)
-  * by Scott O'Hara - @scottohara - bleachedgraphics.com
-  * v 1.1 - June 23, 2013
-  *************************************************************************
+  * by Scott O'Hara - @scottohara - bleachedgraphics.com  -  https://github.com/bleachedgraphics
+  * v 1.2 - June 24, 2013
+  *
+  * Ground Floor NC is a trimmed down version of Ground Floor, an OOCSS, SASS, HTML framework for rapipid
+  * development of web projects.  Ground Floor NC takes many of the principals of Ground Floor and applies
+  * them to basic HTML tags, for HTML that has been slightly more stylized than a basic reset/normalize. 
+  *
+  *******************************************************************************************************
 */
 // Import Fonts 
 	@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700italic,600,400italic,300italic,600italic);
@@ -25,5 +30,8 @@
 	@import '_helper-sass/buttons';			    // Button Classes (also e
 
 // Styling Version
-  @import '_versions-sass/version1';      // Version 1 Styling
+  @import '_versions-sass/default';      // Default Styling
+  // Blue Version
+  // Grey Version
+  // More to come...
   

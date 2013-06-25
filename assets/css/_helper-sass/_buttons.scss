@@ -2,33 +2,33 @@
 //		Basic Styling for Buttons
 // ----------------------------------------------------------------
 .btn, %btn, a.btn{
-    background:$c-Dark; 
-    @include border-radius($radius);
+  background:$c-Dark; 
+  @include border-radius($radius);
+  color:$c-Lighter;
+  cursor:pointer;
+  display:inline-block;
+  font:{family:$brand, $arial; size:$base}
+  line-height:1;
+  padding:$spacing*2 $spacing*3; 
+  text-align:center;
+  text-decoration:none!important; // set to !important so that if used inside of a .nav, no decoration doesn't get overridden
+  @include vendor(transition, all .25s ease-in-out 0s);
+  vertical-align:middle;
+  -webkit-appearance:none;
+  
+  &.btn-Pad{
+	  padding:$spacing*2 $spacing*4
+  }
+    
+  &:hover, &:active{
+    background:$c-Darker; 
+    @include box-shadow($bs-6);
     color:$c-Lighter;
-    cursor:pointer;
-    display:inline-block;
-    font:{family:$arial; size:$base}
-    line-height:1;
-    padding:$spacing*2 $spacing*3; 
-    text-align:center;
-    text-decoration:none!important; // set to !important so that if used inside of a .nav, no decoration doesn't get overridden
-    @include vendor(transition, all .25s ease-in-out 0s);
-    vertical-align:middle;
-    -webkit-appearance:none;
+  }
     
-    &.btn-Pad{
-	    padding:$spacing*2 $spacing*4
-    }
-    
-    &:hover, &:active{
-        background:$c-Darker; 
-        @include box-shadow($bs-6);
-        color:$c-Lighter;
-    }
-    
-    &:visited{
-      color:$c-Lighter!important;
-    }
+  &:visited{
+    color:$c-Lighter!important;
+  }
 }
 
 
@@ -116,7 +116,7 @@
   border:1px solid #eee; 
   color:$c-Dark; 
   cursor:default;
-  &:visited{color:$c-Dark}
+  &:visited{color:$c-Dark!important}
 }
 
 

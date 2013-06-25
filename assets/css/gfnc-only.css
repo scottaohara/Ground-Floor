@@ -1,0 +1,8 @@
+/* Styling for Ground Floor Website Only */
+.hp header nav{display:none}
+header nav{text-align:center}
+header nav li{font-size:14px}
+.show-Code{display:none;}
+.show-Code code{font-size:12px}
+.hp #show-Code{display:none}
+#show-Code{position:fixed; right:0; top:0; z-index:5}

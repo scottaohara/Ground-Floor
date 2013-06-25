@@ -1,10 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700italic,600,400italic,300italic,600italic);
 /*
-  ************************************************************************
+  *******************************************************************************************************
   * Ground Floor NC(NeoCities)
-  * by Scott O'Hara - @scottohara - bleachedgraphics.com
-  * v 1.1 - June 23, 2013
-  *************************************************************************
+  * by Scott O'Hara - @scottohara - bleachedgraphics.com  -  https://github.com/bleachedgraphics
+  * v 1.2 - June 24, 2013
+  *
+  * Ground Floor NC is a trimmed down version of Ground Floor, an OOCSS, SASS, HTML framework for rapipid
+  * development of web projects.  Ground Floor NC takes many of the principals of Ground Floor and applies
+  * them to basic HTML tags, for HTML that has been slightly more stylized than a basic reset/normalize. 
+  *
+  *******************************************************************************************************
 */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -23,7 +28,7 @@ legend, table, th, td, caption, hr, dl {
   padding: 0; }
 
 body {
-  font-family: "Open Sans";
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 100%;
   font-weight: 300;
   line-height: 1.3; }
@@ -294,7 +299,7 @@ label {
 input[type=text], textarea, input[type=date], input[type=time], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
   background: white;
   border: 1px solid #cccccc;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.25;
   margin-bottom: 8px;
   padding: 8px 4px;
@@ -439,7 +444,7 @@ input[type=date], input[type=time] {
   color: #f8f8f8;
   cursor: pointer;
   display: inline-block;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1;
   padding: 8px 12px;
@@ -511,6 +516,9 @@ input[type=date], input[type=time] {
   border: 1px solid #eee;
   color: #444444;
   cursor: default; }
+  .btn-Disable:visited,
+  .btn-Disable:hover:visited {
+    color: #444444 !important; }
 
 .btn-Square {
   -moz-border-radius: 0;
@@ -525,24 +533,23 @@ input[type=date], input[type=time] {
   background-clip: padding-box; }
 
 body {
-  background: white url(bg.jpg);
+  background: white url(../img/bg.jpg);
   letter-spacing: .01em;
   line-height: 1.5; }
 
 header {
-  background: #e7f1ff;
-  background: rgba(231, 241, 255, 0.6);
+  background: #fff;
   border-bottom: 1px solid #ddd;
   font-size: 1.1em;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); }
   header > :last-child {
     margin-bottom: 0; }
+  header h1, header h2, header h3, header h4 {
+    font-family: "Open Sans";
+    font-weight: 600; }
 
 nav {
   border: 1px solid rgba(100, 100, 100, 0.2); }
-
-article {
-  font-family: Georgia, "Times New Roman", Times, serif; }
 
 kbd, samp, code {
   background: #2e2e2e;
@@ -561,11 +568,6 @@ code {
   border-left-color: #8AC000; }
 
 footer {
-  background: #2f2f2f;
-  color: #eee;
+  background: #eee;
+  border-top: 1px solid #ccc;
   font-size: .9em; }
-  footer nav a, footer a {
-    color: white;
-    font-size: 14px; }
-    footer nav a:hover, footer nav a:visited, footer a:hover, footer a:visited {
-      color: #ccc; }

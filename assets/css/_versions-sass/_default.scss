@@ -5,21 +5,24 @@ body{
   line-height:1.5;
 }
 
+
 // Header Styling
 header{
-  background:#e7f1ff;
-  background:rgba(231, 241, 255, .6);
+  background:#fff;
   border-bottom:1px solid #ddd;
   font-size:1.1em;
   text-shadow:0 1px 1px rgba(255,255,255,.2);
   
   &>:last-child{margin-bottom:0}
+  
+  h1, h2, h3, h4{
+    font-family:$brand; font-weight:600;
+  }
 }
+
 
 // Content Styling
 nav{border:1px solid rgba(100,100,100,.2);}
-
-article{font-family:$georgia}
 
 kbd, samp, code{
   background:#2e2e2e;
@@ -33,17 +36,10 @@ kbd   {border-left-color:#0091c0}
 samp  {border-left-color:#00c0a7}
 code  {border-left-color:#8AC000}
 
+
 // Footer Styling
 footer{
-  background:#2f2f2f;
-  color:#eee;
+  background:#eee;
+  border-top:1px solid #ccc;
   font-size:.9em;
-  
-  nav a, a{
-    color:$c-White;
-    font-size:14px;
-    
-    &:hover, 
-    &:visited{color:#ccc;}
-  }
 }
