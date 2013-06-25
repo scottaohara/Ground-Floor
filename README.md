@@ -1,15 +1,15 @@
-# Ground Floor NC <br />(NeoCities Basic Styling)
+# Ground Floor<br />(NeoCities Basic Styling)
 
-## What is Ground Floor NC?
+## What is Ground Floor?
 
 Beyond normalizing, but not super-stylized-HTML either:
 
-Ground Floor NC is the prettying up of HTML tags so that even if you never add a single class, or touch a line of CSS your HTML won't look like a jumble of browser presets or bland looking text.
+Ground Floor is the prettying up of HTML tags so that even if you never add a single class, or touch a line of CSS your HTML won't look like a jumble of browser presets or bland looking text.
 
 
 ### HTML Styling
 
-From headings to tables, forms to HTML5 elements, Ground Floor NC standardizes and lightly extends basic styling for many HTML elements.
+From headings to tables, forms to HTML5 elements, Ground Floor standardizes and lightly extends basic styling for many HTML elements.
 
     * Form Elements
     * Media Elements
@@ -34,6 +34,7 @@ At <a href="http://groundfloor.neocities.org//">http://groundfloor.neocities.org
 * HTML (liquid templating)
 * SASS/CSS
 
+Ground Floor is a simplified fork of <a href="https://github.com/bleachedgraphics/Brass-Tacks">Brass Tacks</a>, an OOCSS, HTML5/SASS professional framework for rapid development for web projects.
 
 ### To Come:
 
