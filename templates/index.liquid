@@ -1,84 +1,91 @@
 {% block bodyClass %}hp{% endblock %}
 
 {% block content %}
-<div>
+<div> <!-- containing div -->
 
 <div class="row">
-<div class="col col-60">
-<h2>What is Ground Floor?</h2>
+  <div class="col col-60">
+    <h2>What is Ground Floor?</h2>
+    
+    <p>
+      Beyond normalizing, but not super-stylized-HTML either:
+    </p>
+    <p>
+      Ground Floor is the prettying up of HTML tags so that even if you never add a single class, or touch a line of CSS your HTML won't look like 
+      a jumble of browser presets or bland looking text.
+    </p>
+    
+    <hr />
+    
+    <h2>HTML Styling</h2>
+    <p>
+      From headings to tables, forms to HTML5 elements, Ground Floor standardizes and lightly extends basic styling for many HTML elements.
+    </p>
+    <ul>
+       <li>
+    			<a href="forms" title="Form Elements">Form Elements</a>
+    		</li>
+    		<li>
+    			<a href="media" title="Media Elements">Media Elements</a>
+    		</li>
+    		<li>
+    			<a href="nav" title="Nav Elements">Nav Elements</a>
+    		</li>
+    		<li>
+    			<a href="table" title="Table Elements">Table Elements</a>
+    		</li>
+    		 <li>
+    			<a href="text" title="Text Elements">Text Elements</a>
+    		</li>
+    </ul>
+    
+    <hr />
 
-<p>
-  Beyond normalizing, but not super-stylized-HTML either:
-</p>
-<p>
-  Ground Floor is the prettying up of HTML tags so that even if you never add a single class, or touch a line of CSS your HTML won't look like 
-  a jumble of browser presets or bland looking text.
-</p>
+    <h2>Basic Classes</h2>
+    <p>
+      While the point of this framework is to give basic styling to HTML without the need for CSS knowledge,
+      for those that do have a basic knowledge of CSS, and want to add just a bit extra to their websites, 
+      here are a few basic classes with examples.
+    </p>
+    <ul>
+      <li>
+    		  <a href="css-buttons" title="CSS Exmaples: Buttons">CSS Buttons</a>
+    		</li>
+    		<li>
+    		  <a href="css-layout" title="CSS Exmaples: Layout">CSS Layout</a>
+    		</li>
+    		<li>
+    		  <a href="css-helper" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
+    		</li>
+    </ul>
 
-<hr />
-
-<h2>HTML Styling</h2>
-<p>
-  From headings to tables, forms to HTML5 elements, Ground Floor standardizes and lightly extends basic styling for many HTML elements.
-</p>
-<ul>
-   <li>
-			<a href="forms" title="Form Elements">Form Elements</a>
-		</li>
-		<li>
-			<a href="media" title="Media Elements">Media Elements</a>
-		</li>
-		<li>
-			<a href="nav" title="Nav Elements">Nav Elements</a>
-		</li>
-		<li>
-			<a href="table" title="Table Elements">Table Elements</a>
-		</li>
-		 <li>
-			<a href="text" title="Text Elements">Text Elements</a>
-		</li>
-</ul>
-
-<hr />
-
-<h2>Basic Classes</h2>
-<p>
-  While the point of this framework is to give basic styling to HTML without the need for CSS knowledge,
-  for those that do have a basic knowledge of CSS, and want to add just a bit extra to their websites, 
-  here are a few basic classes with examples.
-</p>
-<ul>
-  <li>
-		  <a href="css-buttons" title="CSS Exmaples: Buttons">CSS Buttons</a>
-		</li>
-		<li>
-		  <a href="css-layout" title="CSS Exmaples: Layout">CSS Layout</a>
-		</li>
-		<li>
-		  <a href="css-helper" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
-		</li>
-</ul>
-</div>
-<div class="col col-40 txt-Center">
-
-<div style="padding:0 0 0 30px">
+    <hr />
+    
+    <h4>A Floor Up...</h4>
+    <p>
+      Ground Floor is derived from
+      <a href="https://github.com/bleachedgraphics/Brass-Tacks" title="OOCSS, HTML5/SASS framework">Brass Tacks</a>,
+      a HTML5, OOCSS framework built with Sass.
+    </p>
   
-  <h4>Use the HTML &amp; CSS<br>for your own website:</h4>
-  <a class="btn-Large btn-Action-3" href="http://groundfloor.neocities.org/starter.html">Starter HTML</a>
-  <br>
-  <br>
-  <a class="btn-Large btn-Action-2" href="http://groundfloor.neocities.org/default.css">Starter CSS</a>
-  <br>
-  <br>
-  <a class="btn-Large btn-Action" title="view on github" href="https://github.com/bleachedgraphics/ground-floor-nc">
-    Source on GitHub  
-  </a>
-  <br>
-  <br>
-</div>
-
-</div>
+  </div> <!-- end col.60 -->
+  <div class="col col-40 txt-Center">
+  
+    <div style="padding:0 0 0 30px">
+      
+      <h4>Use the HTML &amp; CSS<br>for your own website:</h4>
+      <a class="btn-Large btn-Action-3" href="http://groundfloor.neocities.org/starter.html">Starter HTML</a>
+      <br />
+      <br />
+      <a class="btn-Large btn-Action-2" href="http://groundfloor.neocities.org/default.css">Starter CSS</a>
+      <br />
+      <br />
+      <a class="btn-Large btn-Action" title="view on github" href="https://github.com/bleachedgraphics/ground-floor-nc">Source on GitHub</a> 
+      
+    </div>
+  
+  </div> <!-- end .col-40 -->
 </div> <!-- end .row -->
 
-</div>
+</div> <!-- end containing <div> -->
 {% endblock %}

@@ -1,4 +1,4 @@
-# Ground Floor<br />(NeoCities Basic Styling)
+# Ground Floor<br /><small>(NeoCities Basic Styling)</small>
 
 ## What is Ground Floor?
 
