@@ -25,6 +25,9 @@ blockquote{
 	&:after{content:'"'; right:-1px}
 }
 
+// sets consistent quotes across browsers
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+
 // Abbr should have an underline in all browsers when a title tag is present
 abbr[title]{border-bottom:1px dotted $c-Underline}
 
@@ -36,12 +39,6 @@ mark{background:$c-Highlight; color:$c-Darker}
 
 code, kbd, pre, samp{font-family:monospace, serif; font-size:$base}
 pre{white-space:pre-wrap}
-
-// improves readability
-pre{white-space:pre-wrap}
-
-// sets consistent quotes across browsers
-q{quotes:"\201C" "\201D" "\2018" "\2019"}
 
 // Prevents sub & sup from affecting the line-height
 sub, sup{font-size:75%; line-height:0; position:relative; vertical-align:baseline}
