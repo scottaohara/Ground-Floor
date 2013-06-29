@@ -161,6 +161,9 @@ blockquote {
     content: '"';
     right: -1px; }
 
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
 abbr[title] {
   border-bottom: 1px dotted #cccccc; }
 
@@ -177,12 +180,6 @@ code, kbd, pre, samp {
 
 pre {
   white-space: pre-wrap; }
-
-pre {
-  white-space: pre-wrap; }
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 sub, sup {
   font-size: 75%;
