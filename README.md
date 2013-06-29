@@ -1,6 +1,7 @@
-# Ground Floor<br /><small>(NeoCities Basic Styling)</small>
+# Ground Floor
+## Basic HTML Styling for NeoCities.org websites
 
-## What is Ground Floor?
+### What is Ground Floor?
 
 Beyond normalizing, but not super-stylized-HTML either:
 
@@ -27,7 +28,7 @@ While the point of this framework is to give basic styling to HTML without the n
 
 ### View it Live
 
-At <a href="http://groundfloor.neocities.org//">http://groundfloor.neocities.org/</a>
+At <a href="http://groundfloor.neocities.org/" title="Live example of Ground Floor w/code snippets">http://groundfloor.neocities.org/</a>
 
 ### Built With
 * Mixture.io

@@ -36,10 +36,10 @@ header, main, nav, section, summary{
 blockquote, form, h1, h2, h3, h4, h5, h6, li, p, table, dl, samp, code, kbd, address{margin-bottom:$spacing*2}
 
 // Consistent Padding
-header, main, article, section, div, footer, form{
+header, main, article, section, div, footer, form, aside{
   padding:$spacing*5;
   
-  header, main, article, section, div, footer, form{padding:0}
+  header, main, article, section, div, footer, form, aside{padding:0}
 }
 
 // Easy re-styling for <hr /> tags
@@ -52,8 +52,9 @@ hr{border-top:1px solid #ddd; display:block; height:1px; margin:$spacing*2 0}
 // Links
 a{
 	color:$c-Link;
-	&:hover, &:active{color:darken($c-Link, 20%)}
-	&:visited{color:darken($c-Link, 30%)}
+	&:hover, 
+	&:active  {color:darken($c-Link, 20%)}
+	&:visited {color:darken($c-Link, 30%)}
 }
 
 @import 'base-Media';		// Styling for base media elements

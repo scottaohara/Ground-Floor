@@ -6,7 +6,7 @@
   "preprocessorLocations": "assets",
   "preprocessorScriptOutput": "assets/scripts",
   "preprocessorStyleOutput": "assets/css",
-  "projectDescription": "A simple empty boilerplate for a fresh start",
+  "projectDescription": "A simple boilerplate set of styles/html for new NeoCities websites",
   "projectName": "neocities",
   "publishedId": "4845",
   "serverHostname": null,
