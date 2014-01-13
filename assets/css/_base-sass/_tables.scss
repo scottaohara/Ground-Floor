@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------
-// Tables
+//  Tables
 // ----------------------------------------------------------------
 
 $table-Border: 1px solid #ccc; // sets consistent boarder styling for table elements
@@ -7,32 +7,29 @@ $table-Border: 1px solid #ccc; // sets consistent boarder styling for table elem
 // Removes most of the table spacing issues
 table{
   background:#fafafa;
-  border-collapse:collapse; 
+  border-collapse:collapse;
   border-spacing:0;
   border-bottom:$table-Border;
-	border-right:$table-Border;
-	font-size:$base;
-	width:100%; // make tables always take up the entire width of their containing parent.
-	
-	
-	tr{border-top:$table-Border}
-	tr:nth-child(2n){background:$c-Light}
-	
-	th, td{
-	  border-left:$table-Border; 
-	  padding:$spacing; 
-	  text-align:left;
-  }	
+  border-right:$table-Border;
+  font-size:$base;
+  width:100%; // make tables always take up the entire width of their containing parent.
+
+  tr{border-top:$table-Border}
+  tr:nth-child(2n){background:$c-Light}
+
+  th, td{
+    border-left:$table-Border;
+    padding:$spacing;
+    text-align:left;
+  }
 }
 
 thead{
-	background:#eee;
+  background:#eee;
 }
 
-tbody{
-  
-}
+//tbody{}
 
 tfoot{
-	background:#e3e3e3;
+  background:#e3e3e3;
 }

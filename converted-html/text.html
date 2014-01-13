@@ -1,76 +1,73 @@
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org/Person">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+    <meta content="text/html; charset=UTF-8" />
     <title>Ground Floor NC - Basic HTML Styling for default NeoCities Websites</title>
-    
     <meta name="description"  content="A CSS framework, built with sass, to style HTML tags for simple web building on NeoCities.org" />
     <meta name="keywords"     content="framework, css, scss, html, website building, html elements, helper classes" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-    
     <link href="assets/css/default.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="assets/css/gfnc-only.min.css" rel="stylesheet" type="text/css" media="all"/>
-    
-    <!--[if lt IE 9]> 
+
+    <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
   </head>
-  
+
   <body class="">
     <header>
       <h1>
-  <a href="index.html" title="Back to the home page">Ground Floor</a>
-</h1>
-<h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
+        <a href="index.html" title="Back to the home page">Ground Floor</a>
+      </h1>
+      <h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
 
-<a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
-  <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
-</a>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#show-Code').click(function(){
-      $('.show-Code').slideToggle('fast');
-      $('.hc').toggle();
-    })
-  });
-</script>
+      <a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
+        <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
+      </a>
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#show-Code').click(function(){
+            $('.show-Code').slideToggle('fast');
+            $('.hc').toggle();
+          })
+        });
+      </script>
 
       <nav>
-	<ul>
-		<li>
-			<a href="text.html" title="Text Elements">Fonts &amp; Text</a>
-		</li>
-		<li>
-			<a href="media.html" title="Media Elements">Media Elements</a>
-		</li>
-		<li>
-			<a href="forms.html" title="Form Elements">Forms</a>
-		</li>
-		<li>
-			<a href="nav.html" title="Nav Elements">Nav</a>
-		</li>
-		<li>
-			<a href="table.html" title="Table Elements">Tables</a>
-		</li>
-		<li>
-		  <a href="css-buttons.html" title="CSS Exmaples: Buttons">CSS Buttons</a>
-		</li>
-		<li>
-		  <a href="css-layout.html" title="CSS Exmaples: Layout">CSS Layout</a>
-		</li>
-		<li>
-		  <a href="css-helper.html" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
-		</li>
-	</ul>
+  <ul>
+    <li>
+      <a href="text.html" title="Text Elements">Fonts &amp; Text</a>
+    </li>
+    <li>
+      <a href="media.html" title="Media Elements">Media Elements</a>
+    </li>
+    <li>
+      <a href="forms.html" title="Form Elements">Forms</a>
+    </li>
+    <li>
+      <a href="nav.html" title="Nav Elements">Nav</a>
+    </li>
+    <li>
+      <a href="table.html" title="Table Elements">Tables</a>
+    </li>
+    <li>
+      <a href="css-buttons.html" title="CSS Exmaples: Buttons">CSS Buttons</a>
+    </li>
+    <li>
+      <a href="css-layout.html" title="CSS Exmaples: Layout">CSS Layout</a>
+    </li>
+    <li>
+      <a href="css-helper.html" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
+    </li>
+  </ul>
 </nav>
 
     </header>
-    
+
     <main>
-      
+
 <div>
 <h1>Text Elements &amp; Groupings</h1>
 <p>
@@ -106,9 +103,9 @@
 
   <div class="row">
       <div class="col col-50">
-      
+
       <h3>Standard Text Elements</h3>
-      
+
       <div class="row">
       <div class="col col-50">
         <dl>
@@ -116,77 +113,77 @@
           <dd>- p element</dd>
           <dt><em>Emphasized Text</em></dt>
           <dd>- em element</dd>
-          
+
           <dt><strong>Important Text</strong></dt>
           <dd>- strong element</dd>
-          
+
           <dt><dfn title="This has a title attribute">Definition Term</dfn></dt>
           <dd>- dfn element</dd>
-          
+
           <dt><mark>Marked Text</mark></dt>
           <dd>- mark element</dd>
-          
+
           <dt><var>Variable</var></dt>
           <dd>- var element</dd>
-          
+
           <dt><abbr title="Abbreviations">Abbr</abbr></dt>
           <dd>- abbr element</dd>
-          
+
           <dt><a href="#!" title="an anchor tag that goes nowhere">Hyperlink</a></dt>
           <dd>- a element</dd>
-          
+
           <dt><b>Bolded Text</b></dt>
           <dd>- b element</dd>
         </dl>
       </div>
-      
-      <div class="col col-50">       
+
+      <div class="col col-50">
         <dl>
           <dt><ins>Insert</ins></dt>
           <dd>- ins element</dd>
-          
+
           <dt><u>Underline</u></dt>
           <dd>- u element</dd>
-          
+
           <dt>Normal <sub>subscript</sub></dt>
           <dd>- sub element</dd>
-          
+
           <dt>Normal <sup>superscript</sup></dt>
           <dd>- sup element</dd>
-          
+
           <dt><q>Quote</q></dt>
           <dd>- q element</dd>
-          
+
           <dt><cite>Citation</cite></dt>
           <dd>- cite element</dd>
-          
+
           <dt><del>Text to be deleted</del></dt>
           <dd>- del element</dd>
-          
+
           <dt><i>Text in an alternate voice</i></dt>
           <dd>- i element</dd>
         </dl>
       </div>
-      
+
       </div>
       </div>
-      
+
       <div class="col col-50">
         <h3>Blockquote</h3>
-        
+
         <blockquote>
           A call out quote of some sort
         </blockquote>
-        
+
         <h3>code</h3>
         <code>Computer Code</code>
-        
+
         <h3>samp</h3>
         <samp>Sample Output</samp>
-        
+
         <h3>kbd</h3>
         <kbd>Keyboard Input</kbd>
-        
+
         <h3>Address</h3>
          <address>
           Address: somewhere, world
@@ -210,11 +207,11 @@
       &lt;b>Bolded Text&lt;/b>
     </code>
   </div>
-  
+
   <div class="col col-25">
     <strong>Code</strong>
     <code>
-      &lt;ins>Insert</ins>&lt;/dt><br />
+      &lt;ins>Insert&lt;/ins>&lt;/dt><br />
       &lt;u>Underline&lt;/u><br />
       &lt;sub>subscript&lt;/sub><br />
       &lt;sup>superscript&lt;/sup><br />
@@ -224,7 +221,7 @@
       &lt;i>Text in an alternate voice&lt;/i>
     </code>
   </div>
-  
+
   <div class="col col-50">
     <strong>Code</strong>
     <code>
@@ -240,11 +237,10 @@
  <hr />
 
  <h2>Lists</h2>
-  
+
   <div class="row">
     <div class="col col-33">
       <h3>Ordered List</h3>
-  
       <ol>
         <li>list item 1</li>
           <ol>
@@ -259,10 +255,9 @@
         <li>list item 1</li>
       </ol>
     </div>
-    
+
     <div class="col col-33">
       <h3>Unordered List</h3>
-      
       <ul>
         <li>list item 1</li>
           <ul>
@@ -275,12 +270,12 @@
           </ul>
         </li>
         <li>list item 1</li>
-      </ul>    
+      </ul>
     </div>
-    
+
     <div class="col col-33">
       <h3>Description List</h3>
-      
+
       <dl>
         <dt>Description name</dt>
         <dd>Description value</dd>
@@ -288,7 +283,7 @@
         <dd>Description value</dd>
         <dt>Description name</dt>
         <dd>Description value</dd>
-      </dl>      
+      </dl>
     </div>
   </div>
 
@@ -311,7 +306,7 @@
       &lt;/ol>
     </code>
   </div>
-  
+
   <div class="col col-33">
     <strong>Code</strong>
     <code>
@@ -330,7 +325,7 @@
       &lt;/ul>
     </code>
   </div>
-  
+
   <div class="col col-33">
     <strong>Code</strong>
     <code>
@@ -341,26 +336,24 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd>Description value&lt;/dd><br />
         &nbsp;&nbsp;&lt;dt>Description name&lt;/dt><br />
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd>Description value&lt;/dd><br />
-      &lt;/dl> 
+      &lt;/dl>
     </code>
   </div>
 </div> <!-- end .row.show-Code -->
 
-
-
 </div>
 
     </main>
-    
+
     <footer>
       <p>
-	<a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by 
-	<a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for 
-	<a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
-  It is derived from the <a href="https://github.com/bleachedgraphics/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework. 
-</p>
+        <a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by
+        <a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for
+        <a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
+        It is derived from the <a href="https://github.com/scottaohara/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework.
+      </p>
 
     </footer>
-  
+
   </body>
 </html>

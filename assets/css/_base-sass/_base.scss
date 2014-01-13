@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------
-//		Basic Style Settings / Resetings
+//    Basic Style Settings / Reseting
 // ----------------------------------------------------------------
 
 // Make a smarter Box Model
@@ -9,17 +9,17 @@
 html{overflow-y:scroll; min-height:100%}
 
 // Reset the Standard Tags
-body, blockquote, h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, img, 
+body, blockquote, h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, img,
 legend, table, th, td, caption, hr, dl{border:0; margin:0; outline:0; padding:0}
 
 // Default body text styling
 body{
-	font:{
-	  family:$georgia;
-		size:100%;
-		weight:300;
-	}
-	line-height:1.3;
+  font:{
+    family:$georgia;
+    size:100%;
+    weight:300;
+  }
+  line-height:1.3;
 }
 
 // Give HTML5 elements block display, which is not defined in ie8/9
@@ -33,12 +33,13 @@ header, main, nav, section, summary{
 [hidden]{display:none}
 
 // Consistent Margins
-blockquote, form, h1, h2, h3, h4, h5, h6, li, p, table, dl, samp, code, kbd, address{margin-bottom:$spacing*2}
+blockquote, form, h1, h2, h3, h4, h5, h6, li,
+p, table, dl, samp, code, kbd, address{margin-bottom:$spacing*2}
 
 // Consistent Padding
 header, main, article, section, div, footer, form, aside{
   padding:$spacing*5;
-  
+
   header, main, article, section, div, footer, form, aside{padding:0}
 }
 
@@ -47,15 +48,15 @@ hr{border-top:1px solid #ddd; display:block; height:1px; margin:$spacing*2 0}
 
 // Highlight Text Selection
 ::-moz-selection  {background:$c-Brand-1; color:$c-Light; text-shadow:none}
-::selection		    {background:$c-Brand-1; color:$c-Light; text-shadow:none}
+::selection       {background:$c-Brand-1; color:$c-Light; text-shadow:none}
 
 // Links
 a{
-	color:$c-Link;
-	&:hover, 
-	&:active  {color:darken($c-Link, 20%)}
-	&:visited {color:darken($c-Link, 30%)}
+  color:$c-Link;
+  &:hover,
+  &:active  {color:darken($c-Link, 20%)}
+  &:visited {color:darken($c-Link, 30%)}
 }
 
-@import 'base-Media';		// Styling for base media elements
-@import 'base-Form';		// Styling for base form elements
+@import 'base-Media';   // Styling for base media elements
+@import 'base-Form';    // Styling for base form elements

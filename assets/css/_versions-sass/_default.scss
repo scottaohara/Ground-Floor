@@ -12,9 +12,9 @@ header{
   border-bottom:1px solid #ddd;
   font-size:1.1em;
   text-shadow:0 1px 1px rgba(255,255,255,.2);
-  
+
   &>:last-child{margin-bottom:0}
-  
+
   h1, h2, h3, h4{
     font-family:$brand; font-weight:600;
   }

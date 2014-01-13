@@ -1,257 +1,248 @@
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org/Person">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+    <meta content="text/html; charset=UTF-8" />
     <title>Ground Floor NC - Basic HTML Styling for default NeoCities Websites</title>
-    
     <meta name="description"  content="A CSS framework, built with sass, to style HTML tags for simple web building on NeoCities.org" />
     <meta name="keywords"     content="framework, css, scss, html, website building, html elements, helper classes" />
-    
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-    
     <link href="assets/css/default.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="assets/css/gfnc-only.min.css" rel="stylesheet" type="text/css" media="all"/>
-    
-    <!--[if lt IE 9]> 
+    <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
   </head>
-  
+
   <body class="">
     <header>
       <h1>
-  <a href="index.html" title="Back to the home page">Ground Floor</a>
-</h1>
-<h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
+        <a href="index.html" title="Back to the home page">Ground Floor</a>
+      </h1>
+      <h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
 
-<a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
-  <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
-</a>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#show-Code').click(function(){
-      $('.show-Code').slideToggle('fast');
-      $('.hc').toggle();
-    })
-  });
-</script>
+      <a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
+        <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
+      </a>
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#show-Code').click(function(){
+            $('.show-Code').slideToggle('fast');
+            $('.hc').toggle();
+          })
+        });
+      </script>
 
       <nav>
-	<ul>
-		<li>
-			<a href="text.html" title="Text Elements">Fonts &amp; Text</a>
-		</li>
-		<li>
-			<a href="media.html" title="Media Elements">Media Elements</a>
-		</li>
-		<li>
-			<a href="forms.html" title="Form Elements">Forms</a>
-		</li>
-		<li>
-			<a href="nav.html" title="Nav Elements">Nav</a>
-		</li>
-		<li>
-			<a href="table.html" title="Table Elements">Tables</a>
-		</li>
-		<li>
-		  <a href="css-buttons.html" title="CSS Exmaples: Buttons">CSS Buttons</a>
-		</li>
-		<li>
-		  <a href="css-layout.html" title="CSS Exmaples: Layout">CSS Layout</a>
-		</li>
-		<li>
-		  <a href="css-helper.html" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
-		</li>
-	</ul>
-</nav>
+        <ul>
+          <li>
+            <a href="text.html" title="Text Elements">Fonts &amp; Text</a>
+          </li>
+          <li>
+            <a href="media.html" title="Media Elements">Media Elements</a>
+          </li>
+          <li>
+            <a href="forms.html" title="Form Elements">Forms</a>
+          </li>
+          <li>
+            <a href="nav.html" title="Nav Elements">Nav</a>
+          </li>
+          <li>
+            <a href="table.html" title="Table Elements">Tables</a>
+          </li>
+          <li>
+            <a href="css-buttons.html" title="CSS Exmaples: Buttons">CSS Buttons</a>
+          </li>
+          <li>
+            <a href="css-layout.html" title="CSS Exmaples: Layout">CSS Layout</a>
+          </li>
+          <li>
+            <a href="css-helper.html" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
+          </li>
+        </ul>
+      </nav>
 
     </header>
-    
-    <main>
-       
-<div>
 
-<h1>Layout Classes</h1>
-<p>
-  A basic, flexible grid layout that can be implemented to make your HTML pages not just a long list of stacked content.
-</p>
-<hr />
+    <main>
+      <div>
+
+      <h1>Layout Classes</h1>
+      <p>
+        A basic, flexible grid layout that can be implemented to make your HTML pages not just a long list of stacked content.
+      </p>
+      <hr />
 
 
 <div class="row">
 <div class="col col-75">
 <h3>Rows with Responsive Columns</h3>
 <div class="row">
-	<div class="col col-50">
-		<div class="block">
-			<p>
-				1/2 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-50">
-		<div class="row">
-			<div class="col col-33">
-				<div class="block">
-					<p>
-						1/3 width inside 1/2 col
-					</p>
-				</div>
-			</div>
-			<div class="col col-33">
-				<div class="block">
-					<p>
-						1/3 width inside 1/2 col
-					</p>
-				</div>
-			</div>
-			<div class="col col-33">
-				<div class="block">
-					<p>
-						1/3 width inside 1/2 col
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="row">
-	<div class="col col-33">
-		<div class="block">
-			<p>
-				1/3 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-33">
-		<div class="block">
-			<p>
-				1/3 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-33">
-		<div class="block">
-			<p>
-				1/3 width column
-			</p>
-		</div>
-	</div>
+  <div class="col col-50">
+    <div class="block">
+      <p>
+        1/2 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-50">
+    <div class="row">
+      <div class="col col-33">
+        <div class="block">
+          <p>
+            1/3 width inside 1/2 col
+          </p>
+        </div>
+      </div>
+      <div class="col col-33">
+        <div class="block">
+          <p>
+            1/3 width inside 1/2 col
+          </p>
+        </div>
+      </div>
+      <div class="col col-33">
+        <div class="block">
+          <p>
+            1/3 width inside 1/2 col
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-	<div class="col col-33">
-		<div class="block">
-			<p>
-				1/3 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-66">
-		<div class="block">
-			<p>
-				2/3 width column
-			</p>
-		</div>
-	</div>
-</div>
-
-
-
-<div class="row">
-	<div class="col col-80">
-		<div class="block">
-			<p>
-				4/5 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-20">
-		<div class="block">
-			<p>
-				1/5 width column
-			</p>
-		</div>
-	</div>
+  <div class="col col-33">
+    <div class="block">
+      <p>
+        1/3 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-33">
+    <div class="block">
+      <p>
+        1/3 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-33">
+    <div class="block">
+      <p>
+        1/3 width column
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-	<div class="col col-75">
-		<div class="block">
-			<p>
-				3/4 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-25">
-		<div class="block">
-			<p>
-				1/4 width column
-			</p>
-		</div>
-	</div>
+  <div class="col col-33">
+    <div class="block">
+      <p>
+        1/3 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-66">
+    <div class="block">
+      <p>
+        2/3 width column
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-	<div class="col col-60">
-		<div class="block">
-			<p>
-				3/5 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-40">
-		<div class="block">
-			<p>
-				2/5 width column
-			</p>
-		</div>
-	</div>
+  <div class="col col-80">
+    <div class="block">
+      <p>
+        4/5 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-20">
+    <div class="block">
+      <p>
+        1/5 width column
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-	<div class="col col-50">
-		<div class="block">
-			<p>
-				1/2 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-50">
-		<div class="block">
-			<p>
-				1/2 width column
-			</p>
-		</div>
-	</div>
+  <div class="col col-75">
+    <div class="block">
+      <p>
+        3/4 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-25">
+    <div class="block">
+      <p>
+        1/4 width column
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-	<div class="col col-25">
-		<div class="block">
-			<p>
-				1/4 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-25">
-		<div class="block">
-			<p>
-				1/4 width column
-			</p>
-		</div>
-	</div>
-	<div class="col col-50">
-		<div class="block">
-			<p>
-				1/2 width column
-			</p>
-		</div>
-	</div>
+  <div class="col col-60">
+    <div class="block">
+      <p>
+        3/5 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-40">
+    <div class="block">
+      <p>
+        2/5 width column
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col col-50">
+    <div class="block">
+      <p>
+        1/2 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-50">
+    <div class="block">
+      <p>
+        1/2 width column
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col col-25">
+    <div class="block">
+      <p>
+        1/4 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-25">
+    <div class="block">
+      <p>
+        1/4 width column
+      </p>
+    </div>
+  </div>
+  <div class="col col-50">
+    <div class="block">
+      <p>
+        1/2 width column
+      </p>
+    </div>
+  </div>
 </div>
 
 </div><!-- end col-75 -->
@@ -262,7 +253,7 @@
   <p>
     To create the grids to the left, you will need to use the following markup:
   </p>
-  
+
   <h3>HTML</h3>
   <code style="font-size:12px">
     &lt;div class="row"><br />
@@ -271,14 +262,14 @@
       &nbsp;&nbsp;&lt;/div><br />
     &lt;/div>
   </code>
-  
+
   <h3>CSS</h3>
   <code style="font-size:12px">
   /* Contains the columns */<br />
     .row{<br />
        &nbsp;&nbsp;margin-left:-20px;<br />
-    	 &nbsp;&nbsp;margin-bottom:$20px;<br />
-    	 &nbsp;&nbsp;*zoom:1;<br />
+       &nbsp;&nbsp;margin-bottom:$20px;<br />
+       &nbsp;&nbsp;*zoom:1;<br />
     }<br />
     .row:before,<br />
     .row:after{<br />
@@ -293,14 +284,14 @@
     /* Base Column */<br />
     .col{<br />
       &nbsp;&nbsp;float:left;<br />
-    	&nbsp;&nbsp;margin-bottom:0!important;<br />
-    	&nbsp;&nbsp;padding-left:20px<br />
-    	&nbsp;&nbsp;position:relative;<br />
-    	&nbsp;&nbsp;width:100%;<br />
+      &nbsp;&nbsp;margin-bottom:0!important;<br />
+      &nbsp;&nbsp;padding-left:20px<br />
+      &nbsp;&nbsp;position:relative;<br />
+      &nbsp;&nbsp;width:100%;<br />
     }<br />
     <br />
     /* Size the columns in the row */<br />
-    .col-90	{width:90%}<br />
+    .col-90 {width:90%}<br />
     .col-80 {width:80%}<br />
     .col-75 {width:75%}<br />
     .col-66 {width:66.6666%}<br />
@@ -312,23 +303,21 @@
     .col-20 {width:20%}<br />
     .col-10 {width:10%}
   </code>
-  
+
 </div>
 </div> <!-- end .row -->
 
 </div>
 
     </main>
-    
+
     <footer>
       <p>
-	<a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by 
-	<a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for 
-	<a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
-  It is derived from the <a href="https://github.com/bleachedgraphics/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework. 
-</p>
-
+        <a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by
+        <a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for
+        <a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
+        It is derived from the <a href="https://github.com/scottaohara/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework.
+      </p>
     </footer>
-  
   </body>
 </html>

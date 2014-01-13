@@ -1,76 +1,71 @@
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org/Person">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+    <meta content="text/html; charset=UTF-8" />
     <title>Ground Floor NC - Basic HTML Styling for default NeoCities Websites</title>
-    
     <meta name="description"  content="A CSS framework, built with sass, to style HTML tags for simple web building on NeoCities.org" />
     <meta name="keywords"     content="framework, css, scss, html, website building, html elements, helper classes" />
-    
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-    
     <link href="assets/css/default.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="assets/css/gfnc-only.min.css" rel="stylesheet" type="text/css" media="all"/>
-    
-    <!--[if lt IE 9]> 
+    <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
   </head>
-  
+
   <body class="">
     <header>
       <h1>
-  <a href="index.html" title="Back to the home page">Ground Floor</a>
-</h1>
-<h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
+        <a href="index.html" title="Back to the home page">Ground Floor</a>
+      </h1>
+      <h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
 
-<a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
-  <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
-</a>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#show-Code').click(function(){
-      $('.show-Code').slideToggle('fast');
-      $('.hc').toggle();
-    })
-  });
-</script>
+      <a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
+        <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
+      </a>
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#show-Code').click(function(){
+            $('.show-Code').slideToggle('fast');
+            $('.hc').toggle();
+          })
+        });
+      </script>
 
       <nav>
-	<ul>
-		<li>
-			<a href="text.html" title="Text Elements">Fonts &amp; Text</a>
-		</li>
-		<li>
-			<a href="media.html" title="Media Elements">Media Elements</a>
-		</li>
-		<li>
-			<a href="forms.html" title="Form Elements">Forms</a>
-		</li>
-		<li>
-			<a href="nav.html" title="Nav Elements">Nav</a>
-		</li>
-		<li>
-			<a href="table.html" title="Table Elements">Tables</a>
-		</li>
-		<li>
-		  <a href="css-buttons.html" title="CSS Exmaples: Buttons">CSS Buttons</a>
-		</li>
-		<li>
-		  <a href="css-layout.html" title="CSS Exmaples: Layout">CSS Layout</a>
-		</li>
-		<li>
-		  <a href="css-helper.html" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
-		</li>
-	</ul>
-</nav>
+        <ul>
+          <li>
+            <a href="text.html" title="Text Elements">Fonts &amp; Text</a>
+          </li>
+          <li>
+            <a href="media.html" title="Media Elements">Media Elements</a>
+          </li>
+          <li>
+            <a href="forms.html" title="Form Elements">Forms</a>
+          </li>
+          <li>
+            <a href="nav.html" title="Nav Elements">Nav</a>
+          </li>
+          <li>
+            <a href="table.html" title="Table Elements">Tables</a>
+          </li>
+          <li>
+            <a href="css-buttons.html" title="CSS Exmaples: Buttons">CSS Buttons</a>
+          </li>
+          <li>
+            <a href="css-layout.html" title="CSS Exmaples: Layout">CSS Layout</a>
+          </li>
+          <li>
+            <a href="css-helper.html" title="CSS Exmaples: General Helper Classes">CSS Helper Classes</a>
+          </li>
+        </ul>
+      </nav>
 
     </header>
-    
+
     <main>
-       
+
 <div>
 
 <h1>Form Elements</h1>
@@ -84,10 +79,10 @@
 <h3>Base Input Fields</h3>
 
 <div class="row">
-<fieldset class="col col-50">        
+<fieldset class="col col-50">
   <label for="input-Text">Input - Normal Text</label><br />
   <input id="input-Text" type="text" placeholder="Write Text Here" />
-  
+
   <div class="show-Code">
     <strong>Code</strong>
     <code>
@@ -95,21 +90,20 @@
       &lt;input type="text" id="input-Text" />
     </code>
   </div>
-  
+
   <br />
-  
+
   <label for="input-Text-dl">Input - Text w/Data List</label><br />
   <input id="input-Text-dl" list="list-Name"  type="text" placeholder="Choose" />
   <datalist id="list-Name">
-    <option value="Red"></option> 
-    <option value="Orange"></option> 
+    <option value="Red"></option>
+    <option value="Orange"></option>
     <option value="Yellow"></option>
     <option value="Green"></option>
     <option value="Blue"></option>
-    <option value="Purple"></option> 
+    <option value="Purple"></option>
   </datalist>
-  
-  
+
   <div class="show-Code">
     <strong>Code</strong>
     <code>
@@ -123,9 +117,9 @@
         &lt;/datalist>
     </code>
   </div>
-  
+
   <br />
-  
+
   <label for="input-Email">Input - Email</label><br />
   <input id="input-Email" type="email" placeholder="Enter Email" />
   <div class="show-Code">
@@ -136,7 +130,7 @@
     </code>
   </div>
   <br />
-  
+
   <label for="input-Password">Input - Password</label><br />
   <input id="input-Password" type="password" placeholder="Enter Password" />
   <div class="show-Code">
@@ -147,7 +141,7 @@
     </code>
   </div>
   <br />
-  
+
   <label for="input-Url">Input - Web Address</label><br />
   <input id="input-Url" type="url" placeholder="Enter Web Address" />
   <div class="show-Code">
@@ -158,7 +152,7 @@
     </code>
   </div>
   <br />
-  
+
   <label for="input-Tel">Input - Phone Number</label><br />
   <input id="input-Tel" type="tel" placeholder="555.555.5555" />
   <div class="show-Code">
@@ -169,7 +163,7 @@
     </code>
   </div>
   <br />
-  
+
   <label for="input-Search">Input - Search</label><br />
   <input id="input-Search" type="search" placeholder="Search for..." />
   <input type="submit" value="Search" />
@@ -181,10 +175,9 @@
       &lt;input type="submit" value="Search" />
     </code>
   </div>
-  
-  
+
   <br />
-  
+
   <label for="input-TextArea">Text Area</label><br />
   <textarea id="input-TextArea"></textarea>
   <div class="show-Code">
@@ -194,10 +187,9 @@
       &lt;textarea id="text-Area">&lt;/textarea>
     </code>
   </div>
-  
-  
+
   <br />
-  
+
   <h4>Selections</h4>
   <label for="base-Select">Default Select</label><br />
   <select id="base-Select">
@@ -219,8 +211,7 @@
         &lt;/select>
     </code>
   </div>
-   
-   
+
 <br />
 
   <label for="multi-Select">Multiple select field</label><br />
@@ -244,7 +235,7 @@
         &lt;/select>
     </code>
   </div>
-  
+
 </fieldset>
 
 <fieldset class="col col-50">
@@ -257,11 +248,11 @@
       &lt;input type="text" value="Disabled" disabled="disabled" />
     </code>
   </div>
-  
+
   <br />
   <label for="input-Text-Readonly">Readonly Text Input</label><br />
   <input id="input-Text-Readonly" type="text" value="Readonly text input" readonly="readonly" />
-  
+
   <div class="show-Code">
     <strong>Code</strong>
     <code>
@@ -270,10 +261,10 @@
     </code>
   </div>
   <br />
-  
+
   <label for="input-Required">Required Input</label><br />
   <input type="text" id="input-Required" placeholder="Placeholder Text" required="required" />
-  
+
   <div class="show-Code">
     <strong>Code</strong>
     <code>
@@ -281,7 +272,7 @@
       &lt;input type="text" id="input-Required" required="required" />
     </code>
   </div>
-  
+
   <br />
   <label>File Input</label><br />
   <input id="input-File" type="file" />
@@ -292,10 +283,9 @@
       &lt;input type="file" id="input-File" />
     </code>
   </div>
-  
+
   <br />
-  
-   
+
   <h4>Check Boxes / Radios</h4>
    <label for="check-1">Check Box 1</label>
    <input type="checkbox" id="check-1" />
@@ -348,11 +338,11 @@
       &lt;input type="submit" value="Submit" />
     </code>
   </div>
-  
+
   <br />
   <label>Button</label><br />
   <button name="Button" type="submit" value="Button Example">Button</button>
-  
+
   <div class="show-Code">
   <strong>Code</strong>
     <code>
@@ -368,7 +358,9 @@
 <hr />
 
 <h3>Additional Inputs</h3>
-<p>These inputs will default to input type=text styling and functionality in browsers that don't support support them yet.</p>
+<p>These inputs will default to input type=text styling and
+  functionality in browsers that don't support support them yet.
+</p>
 
 <div class="row">
   <div class="col col-40">
@@ -405,23 +397,21 @@
     </code>
 
 </div>
-</div> <!-- end  --> 
+</div> <!-- end  -->
 </form>
-
 
 </div>
 
     </main>
-    
+
     <footer>
       <p>
-	<a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by 
-	<a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for 
-	<a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
-  It is derived from the <a href="https://github.com/bleachedgraphics/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework. 
-</p>
-
+        <a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by
+        <a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for
+        <a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
+        It is derived from the <a href="https://github.com/scottaohara/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework.
+      </p>
     </footer>
-  
+
   </body>
 </html>

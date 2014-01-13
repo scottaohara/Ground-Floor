@@ -1,31 +1,31 @@
 // ----------------------------------------------------------------
-//		Layout Grids
+//    Layout Grids
 // ----------------------------------------------------------------
-// A container for each row of our layout. 
+// A container for each row of our layout.
 // Simply styled with only a base margin-bottom and extending the clearfix class,
 // a row can also have helper classes added onto it for other general styling purposes
 .row{
-	margin-left:-$spacing*5;
-	margin-bottom:$spacing*5;
-	padding:0;
-	@extend .clearfix;
+  margin-left:-$spacing*5;
+  margin-bottom:$spacing*5;
+  padding:0;
+  @extend .clearfix;
 }
 
-// The grid columns within a row.  
+// The grid columns within a row.
 // Do not apply styling to this class as its purpose is for layout only.
 .col{
-	float:left;
-	margin-bottom:0!important; 
-		// row has a margin-bottom applied to it already, 
-		// to absolutely make sure there is no extra margin, 0!important is used
-	padding-left:$spacing*5;
-	position:relative;
-	width:100%; // default width is 100%.  
+  float:left;
+  margin-bottom:0!important;
+    // row has a margin-bottom applied to it already,
+    // to absolutely make sure there is no extra margin, 0!important is used
+  padding-left:$spacing*5;
+  position:relative;
+  width:100%; // default width is 100%.
 }
 
-// Base responsive grid column classes. 
-// Do not apply styling to these as their purpose is for width only. 
-.col-90	{width:90%}
+// Base responsive grid column classes.
+// Do not apply styling to these as their purpose is for width only.
+.col-90 {width:90%}
 .col-80 {width:80%}
 .col-75 {width:75%}
 .col-66 {width:66.6666%}
@@ -41,6 +41,6 @@
 // The main purpose of a class like this is to apply to an inner HTML element of the column structure
 // so we can apply styling to the columns.
 .block{
-	background:#ccc; color:#333; padding:$spacing;
-	& > :last-child{margin-bottom:0}
+  background:#ccc; color:#333; padding:$spacing;
+  & > :last-child{margin-bottom:0}
 }
