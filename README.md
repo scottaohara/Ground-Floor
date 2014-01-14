@@ -1,5 +1,5 @@
 # Ground Floor
-## Basic HTML Styling used by NeoCities.org websites
+## Basic Styling of HTML elements
 
 ### What is Ground Floor?
 
@@ -44,6 +44,6 @@ At <a href="http://groundfloor.neocities.org/" title="Live example of Ground Flo
 * HTML (liquid templates)
 * SASS/CSS
 
-Ground Floor is a simplified version of
+Ground Floor is a very simplified early draft version of
 <a href="https://github.com/scottaohara/Brass-Tacks">Brass Tacks</a>,
 an OOCSS, HTML5/Sass framework for rapid development for web projects.
