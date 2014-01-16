@@ -14,12 +14,13 @@ or touch a line of CSS your HTML won't look like a jumble of browser presets or 
 From headings to tables, forms to HTML5 elements, Ground Floor standardizes and lightly extends
 basic styling for many HTML elements.
 
-    * Form Elements
-    * Media Elements
-    * Nav Elements
-    * Table Elements
-    * Text Elements
-
+<ul>
+<li>Form Elements</li>
+<li>Media Elements</li>
+<li>Nav Elements</li>
+<li>Table Elements</li>
+<li>Text Elements</li>
+</ul>
 
 ### Basic Classes
 
@@ -28,9 +29,11 @@ CSS knowledge. However, for those that do have a basic knowledge of CSS and want
 styling and layout structure to their websites, Ground Floor has a few basic CSS classes to extend the
 standard styling.
 
-    * CSS Buttons
-    * CSS Layout
-    * CSS Helper Classes
+<ul>
+<li>CSS Buttons</li>
+<li>CSS Layout</li>
+<li>CSS Helper Classes</li>
+</ul>
 
 
 ### View it Live
