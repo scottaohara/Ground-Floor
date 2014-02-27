@@ -49,15 +49,16 @@ sub, sup{font-size:75%; line-height:0; position:relative; vertical-align:baselin
 //    Site-Wide Typography Standards
 // ----------------------------------------------------------------
 h1, h2, h3, h4, h5, h6{
-  a{text-decoration:none}
-  a:hover{text-decoration:underline}
+  a{text-decoration:none};
+  a:hover{text-decoration:underline};
+  font-weight: 300;
 }
 
-h1          {font:{size:$alpha;   weight:300}}
-h2          {font:{size:$beta;    weight:300}}
-h3          {font:{size:$gamma;   weight:300}}
-h4          {font:{size:$delta;   weight:300}}
-h5          {font:{size:$eps;     weight:300}}
-h6          {font:{size:$zeta;    weight:300}}
-p, li, li p {font:{size:$base;    weight:300}}
-small       {font:{size:$tiny;    weight:300}}
+h1          {font-size:$alpha;}
+h2          {font-size:$beta; }
+h3          {font-size:$gamma;}
+h4          {font-size:$delta;}
+h5          {font-size:$eps;  }
+h6          {font-size:$zeta; }
+p, li, li p {font-size:$base; }
+small       {font-size:$tiny; }

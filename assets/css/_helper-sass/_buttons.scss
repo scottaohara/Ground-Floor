@@ -2,8 +2,9 @@
 //    Basic Styling for Buttons
 // ----------------------------------------------------------------
 .btn, %btn, a.btn{
-  background:$c-Dark;
+  @include vendor(transition, all .25s ease-in-out 0s);
   @include border-radius($radius);
+  background:$c-Dark;
   color:$c-Lighter;
   cursor:pointer;
   display:inline-block;
@@ -11,8 +12,8 @@
   line-height:1;
   padding:$spacing*2 $spacing*3;
   text-align:center;
-  text-decoration:none!important; // set to !important so that if used inside of a .nav, no decoration doesn't get overridden
-  @include vendor(transition, all .25s ease-in-out 0s);
+  text-decoration:none!important;
+  // set to !important so that if used inside of a .nav, no decoration doesn't get overridden
   vertical-align:middle;
   -webkit-appearance:none;
 
