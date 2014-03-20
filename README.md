@@ -1,4 +1,5 @@
 # Ground Floor
+
 ## Basic Styling of HTML elements
 
 ### What is Ground Floor?
@@ -6,7 +7,7 @@
 Beyond normalizing, but not super-stylized-HTML either:
 
 Ground Floor is the prettying up of HTML tags so that even if you never add a single class,
-or touch a line of CSS your HTML won't look like a jumble of browser presets or bland looking text.
+or touch a line of CSS your HTML won't look like a jumble of browser presets, or bland looking text.
 
 
 ### HTML Styling
@@ -15,11 +16,11 @@ From headings to tables, forms to HTML5 elements, Ground Floor standardizes and 
 basic styling for many HTML elements.
 
 <ul>
-<li>Form Elements</li>
-<li>Media Elements</li>
-<li>Nav Elements</li>
-<li>Table Elements</li>
-<li>Text Elements</li>
+  <li>Form Elements</li>
+  <li>Media Elements</li>
+  <li>Nav Elements</li>
+  <li>Table Elements</li>
+  <li>Text Elements</li>
 </ul>
 
 ### Basic Classes
@@ -47,6 +48,4 @@ At <a href="http://groundfloor.neocities.org/" title="Live example of Ground Flo
 * HTML (liquid templates)
 * SASS/CSS
 
-Ground Floor is a very simplified early draft version of
-<a href="https://github.com/scottaohara/Brass-Tacks">Brass Tacks</a>,
-an OOCSS, HTML5/Sass framework for rapid development for web projects.
+Ground Floor is a very simplified version of <a href="https://github.com/scottaohara/Brass-Tacks">Brass Tacks</a>, an OOCSS, Sass framework for rapid development of web projects.
