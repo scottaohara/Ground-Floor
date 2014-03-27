@@ -5,7 +5,7 @@
 form {
   background: #fdfdfd;
   border: 1px solid #ccc;
-  padding: $spacing*2!important;
+  padding: $spacing*2 !important;
 }
 
 // Legend Styling
@@ -23,7 +23,7 @@ label {
   margin-bottom: $spacing;
 }
 
-input[type=text], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
+input[type="text"], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
   background: $c-White;
   border: 1px solid $c-Border;
   font-family: $brand, $arial;
@@ -39,16 +39,16 @@ input[type=text], input:not([type="radio"]):not([type="checkbox"]):not([type="su
   }
 
   &[disabled] {
-    background:#ddd;
+    background: #ddd;
   }
 
   &[required] {
-    border-color:$c-Required;
+    border-color: $c-Required;
   }
 }
 
 textarea {
-  @extend input[type=text];
+  @extend input[type="text"];
   display: block;
   min-height: 150px;
   resize: vertical;
@@ -60,14 +60,14 @@ select{
   width: 50%;
 }
 
-input[type=radio],
-input[type=checkbox]{
+input[type="radio"],
+input[type="checkbox"]{
   margin: 0 $spacing $spacing;
   vertical-align: middle;
 }
 
 /* Inputs not supported in all browsers */
-input[type=color] {
+input[type="color"] {
 // reusing a lot of input-Area here, but not @extending it because the rules of input-Area
 // 'break' how this should look in chrome/opera
   border: 1px solid $c-Border;
@@ -84,7 +84,7 @@ input[type=color] {
   }
 }
 
-input[type=date], input[type=time] {
-  @extend input[type=text];
+input[type="date"], input[type="time"] {
+  @extend input[type="text"];
   font-size: $base;
 }

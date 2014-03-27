@@ -14,7 +14,7 @@
 @mixin base-vendor($property, $value...){
        -moz-#{$property}:$value;
     -webkit-#{$property}:$value;
-          #{$property}:$value;
+            #{$property}:$value;
 }
 
 // ----------------------------------------------------------------
@@ -28,7 +28,7 @@
 // Border Radius
 @mixin border-radius($br-value) {
   @include base-vendor(border-radius, $br-value);
-  background-clip:padding-box;
+  background-clip: padding-box;
 }
 
 // Box Shadow
@@ -64,7 +64,7 @@
 // but still need for accesibility / functionality
 // -- ie. radio buttons for custom styled radio inputs
 @mixin invisible {
-  border :0!important;
+  border: 0!important;
   height: 1px!important;
   left: -999999px!important;
   overflow: hidden!important;
