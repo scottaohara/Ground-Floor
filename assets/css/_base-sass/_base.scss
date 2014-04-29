@@ -3,7 +3,9 @@
 // ----------------------------------------------------------------
 
 // Make a smarter Box Model
-*, *:before, *:after{@include box-sizing(border-box)}
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
 
 // Just to make sure the HTML doesn't act like a bitch
 html {

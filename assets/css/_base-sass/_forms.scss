@@ -23,7 +23,8 @@ label {
   margin-bottom: $spacing;
 }
 
-input[type="text"], input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
+input[type="text"],
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]) {
   background: $c-White;
   border: 1px solid $c-Border;
   font-family: $brand, $arial;
@@ -55,13 +56,13 @@ textarea {
   width: 100%;
 }
 
-select{
+select {
   margin-bottom: $spacing*2;
   width: 50%;
 }
 
 input[type="radio"],
-input[type="checkbox"]{
+input[type="checkbox"] {
   margin: 0 $spacing $spacing;
   vertical-align: middle;
 }
