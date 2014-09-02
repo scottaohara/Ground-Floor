@@ -1,45 +1,52 @@
 // Body Styling
-body{
-  background:$c-White url(../img/bg.jpg);
-  letter-spacing:.01em;
-  line-height:1.5;
+body {
+  background: $c-white;
+  letter-spacing: .01em;
+  line-height: 1.5;
 }
 
 
 // Header Styling
-header{
-  background:#fff;
-  border-bottom:1px solid #ddd;
-  font-size:1.1em;
-  text-shadow:0 1px 1px rgba(255,255,255,.2);
+header {
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1em;
 
-  &>:last-child{margin-bottom:0}
+  &>:last-child {
+    margin-bottom: 0;
+  }
 
-  h1, h2, h3, h4{
-    font-family:$brand; font-weight:600;
+  h1, h2, h3, h4 {
+    font-family: $brand;
+    font-weight: 600;
   }
 }
 
 
 // Content Styling
-nav{border:1px solid rgba(100,100,100,.2);}
+nav {
+  border: 1px solid rgba(100,100,100,.2);
+}
 
 kbd, samp, code{
   background:#2e2e2e;
-  border-left:6px solid;
-  color:#eee;
-  display:block;
-  padding:$spacing*3;
+  border: 2px solid;
+  color: #eee;
+  display: block;
+  padding: $spacing * 3;
 }
 
-kbd   {border-left-color:#0091c0}
-samp  {border-left-color:#00c0a7}
-code  {border-left-color:#8AC000}
+p, li {
+  > code,
+  > kbd,
+  > samp {
+    display: inline-block;
+  }
+}
 
 
 // Footer Styling
-footer{
-  background:#eee;
-  border-top:1px solid #ccc;
-  font-size:.9em;
+footer {
+  background: #eee;
+  font-size: .9em;
 }

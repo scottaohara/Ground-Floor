@@ -2,17 +2,42 @@
 //    Text Helpers
 // ----------------------------------------------------------------
 // Align Text
-.txt-Center {text-align:center}
-.txt-Left {text-align:left}
-.txt-Right  {text-align:right}
-.txt-Just {text-align:justify}
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-just {
+  text-align: justify;
+}
 
 // ----------------------------------------------------------------
 //    Floats & Clearing
 // ----------------------------------------------------------------
-.float-Left   {float:left}
-.float-Right  {float:right}
-.float-None   {float:none}
-.clear      {clear:both}
-.clearfix   {@include clearfix}
-.overflow   {overflow:hidden}
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.overflow {
+  overflow: hidden;
+}

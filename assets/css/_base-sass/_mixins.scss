@@ -11,7 +11,7 @@
 }
 
 // Just webkit & moz Prefixes
-@mixin base-vendor($property, $value...){
+@mixin txt-base-vendor($property, $value...){
        -moz-#{$property}:$value;
     -webkit-#{$property}:$value;
             #{$property}:$value;
@@ -22,31 +22,8 @@
 // ----------------------------------------------------------------
 // Box Sizing
 @mixin box-sizing($box-value) {
-  @include base-vendor(box-sizing, $box-value);
+  @include txt-base-vendor(box-sizing, $box-value);
 }
-
-// Border Radius
-@mixin border-radius($br-value) {
-  @include base-vendor(border-radius, $br-value);
-  background-clip: padding-box;
-}
-
-// Box Shadow
-@mixin box-shadow($bs-value) {
-  @include base-vendor(box-shadow, $bs-value)
-}
-
-// See _var.scss to edit & create box-shadow rules
-
-
-// Transition
-//@mixin transition($tran-property, $tran-time, $tran-method, $tran-delay) {
-//  @include vendor(transition, $tran-property $tran-time $tran-method $tran-delay);
-//}
-
-// Example --  @include transition(all 0.35s ease 0;);
-// transition: property duration timing-function(method) delay;
-// transition: all    .35s   ease            0s;  <-- the s is required regardless of if it's 0 or not
 
 
 // ----------------------------------------------------------------
@@ -61,23 +38,23 @@
 }
 
 // Hide entire elements that you don't want visible
-// but still need for accesibility / functionality
+// but still need for accessibility / functionality
 // -- ie. radio buttons for custom styled radio inputs
 @mixin invisible {
-  border: 0!important;
-  height: 1px!important;
-  left: -999999px!important;
-  overflow: hidden!important;
-  position: absolute!important;
-  width: 1px!important;
+  border: 0 !important;
+  height: 1px !important;
+  left: -999999px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  width: 1px !important;
 }
 
 // Truncate Text
 @mixin truncate($truncation-boundary){
-    max-width: $truncation-boundary;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  max-width: $truncation-boundary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
   // Example --  @include truncate(100%);
 
@@ -88,7 +65,7 @@
 @mixin clearfix {
   *zoom: 1;
   &:before, &:after{
-    content: "";
+    content: '';
     display: table;
   }
   &:after{
@@ -98,41 +75,24 @@
 
 
 // ----------------------------------------------------------------
-//    Hi-Res Retina Images
-//    https://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
-// ----------------------------------------------------------------
-@mixin image-2x($image, $width, $height) {
-  @media (min--moz-device-pixel-ratio: 1.3),
-         (-o-min-device-pixel-ratio: 2.6/2),
-         (-webkit-min-device-pixel-ratio: 1.3),
-         (min-device-pixel-ratio: 1.3),
-         (min-resolution: 1.3dppx) {
-        // on retina, use image that's scaled by 2
-        background-image: url($image);
-        background-size: $width $height;
-  }
-}
-
-
-// ----------------------------------------------------------------
 //    Responsive Row w/fixed width column -- use in combo with .row
 // ----------------------------------------------------------------
-@mixin row-fixed-Left($col-Size) {
-  padding-left: $col-Size;
+@mixin row-fixed-left($col-size) {
+  padding-left: $col-size;
 
-  .f-Col {
+  .f-col {
     float: left;
-    margin-left: -$col-Size + 20px;
-    width: $col-Size - 20px;
+    margin-left: -$col-size + 20px;
+    width: $col-size - 20px;
   }
 }
 
-@mixin row-fixed-Right($col-Size) {
-  padding-right: $col-Size;
+@mixin row-fixed-right($col-size) {
+  padding-right: $col-size;
 
-  .f-Col {
+  .f-col {
     float: right;
-    margin-right: -$col-Size;
-    width: $col-Size - 20px;
+    margin-right: -$col-size;
+    width: $col-size - 20px;
   }
 }

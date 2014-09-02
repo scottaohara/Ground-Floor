@@ -3,7 +3,9 @@
 // ----------------------------------------------------------------
 
 // Make a smarter Box Model
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   @include box-sizing(border-box);
 }
 
@@ -66,16 +68,16 @@ hr {
 }
 
 // Highlight Text Selection
-::-moz-selection  {background:$c-Brand-1; color:$c-Light; text-shadow:none}
-::selection       {background:$c-Brand-1; color:$c-Light; text-shadow:none}
+::-moz-selection  {background:$c-brand-1; color:$c-light; text-shadow:none}
+::selection       {background:$c-brand-1; color:$c-light; text-shadow:none}
 
 // Links
 a {
-  color:$c-Link;
+  color: $c-link;
   &:hover,
-  &:active  {color:darken($c-Link, 20%)}
-  &:visited {color:darken($c-Link, 30%)}
+  &:focus,
+  &:active  {color:darken($c-link, 20%)}
 }
 
-@import 'base-Media';   // Styling for base media elements
-@import 'base-Form';    // Styling for base form elements
+@import 'base-media';   // Styling for base media elements
+@import 'base-form';    // Styling for base form elements

@@ -35,15 +35,19 @@ i, em, dfn {
   font-style: italic;
 }
 
-// Blockquote base styling
+// Blockquote txt-base styling
 blockquote {
-  font:{
-    size: $eps;
+  font: {
+    size: $txt-h5;
     style: italic;
   };
 
-  &:before, &:after {
-    font: {size:$eps; weight:400};
+  &:before,
+  &:after {
+    font: {
+      size: $txt-h5;
+      weight: 400
+    };
     line-height: 1;
     position: relative;
     top: 2px;
@@ -61,29 +65,29 @@ blockquote {
 
 // sets consistent quotes across browsers
 q {
-  quotes:"\201C" "\201D" "\2018" "\2019";
+  quotes: '\201C' '\201D' '\2018' '\2019';
 }
 
 // Abbr should have an underline in all browsers when a title tag is present
 abbr[title] {
-  border-bottom:1px dotted $c-Underline;
+  border-bottom: 1px dotted $c-underline;
 }
 
 // Show help cursor to tags with title attribute
 abbr[title],
-dfn[title]{
+dfn[title] {
   cursor: help;
 }
 
 // IE 8/9 doesn't do this by default.  shame.  shame IE.  shame...
 mark {
-  background:$c-Highlight;
-  color:$c-Darker;
+  background: $c-highlight;
+  color: $c-darker;
 }
 
 code, kbd, pre, samp {
   font-family: monospace, serif;
-  font-size: $base;
+  font-size: $txt-base;
 }
 
 pre {
@@ -114,11 +118,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1          {font-size:$alpha;}
-h2          {font-size:$beta; }
-h3          {font-size:$gamma;}
-h4          {font-size:$delta;}
-h5          {font-size:$eps;  }
-h6          {font-size:$zeta; }
-p, li, li p {font-size:$base; }
-small       {font-size:$tiny; }
+h1          { font-size: $txt-h1; }
+h2          { font-size: $txt-h2; }
+h3          { font-size: $txt-h3; }
+h4          { font-size: $txt-h4; }
+h5          { font-size: $txt-h5;  }
+h6          { font-size: $txt-h6; }
+p, li, li p { font-size: $txt-base; }
+small       { font-size: $txt-tiny; }

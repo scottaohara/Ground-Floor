@@ -4,13 +4,13 @@
 
 form {
   background: #fdfdfd;
-  border: 1px solid #ccc;
+  border: 1px solid $c-grey;
   padding: $spacing*2 !important;
 }
 
 // Legend Styling
 legend {
-  font-size: $eps;
+  font-size: $txt-h5;
   margin-left: -$spacing;
   padding: 0 $spacing;
 }
@@ -23,10 +23,10 @@ label {
   margin-bottom: $spacing;
 }
 
-input[type="text"],
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]) {
-  background: $c-White;
-  border: 1px solid $c-Border;
+input[type='text'],
+input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='reset']):not([type='button']) {
+  background: $c-white;
+  border: 1px solid $c-border;
   font-family: $brand, $arial;
   line-height: 1.25;
   margin-bottom: $spacing*2;
@@ -34,8 +34,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
   width: 50%;
 
   &:focus {
-    @include box-shadow($bs-2);
-    background: $c-Lighter;
+    background: $c-lighter;
     border: 1px solid #50B6D5;
   }
 
@@ -44,12 +43,12 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
   }
 
   &[required] {
-    border-color: $c-Required;
+    border-color: $c-required;
   }
 }
 
 textarea {
-  @extend input[type="text"];
+  @extend input[type='text'];
   display: block;
   min-height: 150px;
   resize: vertical;
@@ -61,17 +60,17 @@ select {
   width: 50%;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   margin: 0 $spacing $spacing;
   vertical-align: middle;
 }
 
 /* Inputs not supported in all browsers */
-input[type="color"] {
+input[type='color'] {
 // reusing a lot of input-Area here, but not @extending it because the rules of input-Area
 // 'break' how this should look in chrome/opera
-  border: 1px solid $c-Border;
+  border: 1px solid $c-border;
   font-family: $arial;
   margin-bottom: $spacing*2;
   padding: 0 $spacing;
@@ -79,13 +78,13 @@ input[type="color"] {
   width: 50%;
 
   &:focus {
-    @include box-shadow($bs-2);
-    background: $c-Lighter;
+    background: $c-lighter;
     border: 1px solid #50B6D5;
   }
 }
 
-input[type="date"], input[type="time"] {
-  @extend input[type="text"];
-  font-size: $base;
+input[type='date'],
+input[type='time'] {
+  @extend input[type='text'];
+  font-size: $txt-base;
 }

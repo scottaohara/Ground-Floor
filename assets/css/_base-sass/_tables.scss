@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------
 
 // sets consistent boarder styling for table elements
-$table-border: 1px solid #ccc;
+$table-border: 1px solid $c-grey;
 
 
 // Removes most of the table spacing issues
@@ -13,7 +13,7 @@ table {
   border-spacing: 0;
   border-bottom: $table-border;
   border-right: $table-border;
-  font-size: $base;
+  font-size: $txt-base;
   width: 100%;
   // make tables always take up the entire width of their containing parent.
 
@@ -21,7 +21,7 @@ table {
     border-top: $table-border;
 
     &:nth-child(2n){
-      background: $c-Light;
+      background: $c-light;
     }
   }
 

@@ -1,0 +1,68 @@
+// ----------------------------------------------------------------
+// Colors
+// ----------------------------------------------------------------
+// txt-base Branding Colors
+$c-brand-1:       #54a4a3;
+$c-brand-2:       #d48371;
+$c-brand-3:       #7e984c;
+
+// txt-base Darker Colors
+$c-dark:          #444;
+$c-darker:        #101010;
+
+$c-grey:          #ccc;
+
+// txt-base Lighter Colors
+$c-white:         #fff;
+$c-light:         #eee;
+$c-lighter:       #f8f8f8;
+
+$c-link:          #3B8BBA;
+
+// Button Colors
+$c-btn-1:         $c-link;
+$c-btn-2:         #1dccaa;
+$c-btn-3:         #b94a48;
+
+$c-btn-negative:  #aaa;
+$c-disabled:      #fafafa;
+
+// Color for Radio/Check box buttons
+$c-btn-rc:        $c-light;
+
+// Required / Error Text Color
+$c-required:      #f00;
+
+// Underlines & Highlights
+$c-highlight:     #ff0;
+$c-underline:     $c-grey; // not for links
+$c-border:        $c-grey;
+
+
+// ----------------------------------------------------------------
+// Fonts Families
+// ----------------------------------------------------------------
+$brand:     'Open Sans'; // replace this with your main brand font
+$arial:     Arial, "Helvetica Neue", Helvetica, sans-serif;
+$georgia:   Georgia, "Times New Roman", Times, serif;
+
+
+// ----------------------------------------------------------------
+// Font Size Declarations
+// ----------------------------------------------------------------
+$txt-base-font: 1em; // 1em = 16px
+
+$txt-h1:      $txt-base-font * 3.125;     // 50px
+$txt-h2:      $txt-base-font * 2.5;       // 40px
+$txt-h3:      $txt-base-font * 2;         // 32px
+$txt-h4:      $txt-base-font * 1.625;     // 26px
+$txt-h5:      $txt-base-font * 1.25;      // 20px
+$txt-h6:      $txt-base-font * 1.125;     // 18px
+$txt-base:    $txt-base-font;             // 16px
+$txt-tiny:    $txt-base-font * .75;       // 12px
+
+
+// ----------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------
+$spacing:     4px;
