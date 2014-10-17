@@ -2,9 +2,8 @@
 <html lang="en" itemscope itemtype="http://schema.org/Person">
   <head>
     <meta content="text/html; charset=UTF-8" />
-    <title>Ground Floor NC - Basic HTML Styling for default NeoCities Websites</title>
+    <title>Ground Floor - Basic HTML Styling for default NeoCities Websites</title>
     <meta name="description"  content="A CSS framework, built with sass, to style HTML tags for simple web building on NeoCities.org" />
-    <meta name="keywords"     content="framework, css, scss, html, website building, html elements, helper classes" />
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
     <link href="assets/css/default.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="assets/css/gfnc-only.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -14,26 +13,26 @@
   </head>
 
   <body class="">
-    <header>
+    <header role="banner">
       <h1>
         <a href="index.html" title="Back to the home page">Ground Floor</a>
       </h1>
       <h4>Basic styling for out-of-the-box NeoCities.org websites</h4>
 
-      <a href="#!" title="click to show code examples for each element" class="btn-Action-3" id="show-Code">
+      <a href="#!" title="click to show code examples for each element" class="btn-action-3" id="show-code">
         <span class="hc">Show</span><span class="hc" style="display:none">Hide</span> Code
       </a>
       <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
       <script type="text/javascript">
         $(document).ready(function(){
-          $('#show-Code').click(function(){
-            $('.show-Code').slideToggle('fast');
+          $('#show-code').click(function(){
+            $('.show-code').slideToggle('fast');
             $('.hc').toggle();
           })
         });
       </script>
 
-      <nav>
+      <nav role="navigation">
         <ul>
           <li>
             <a href="text.html" title="Text Elements">Fonts &amp; Text</a>
@@ -64,7 +63,7 @@
 
     </header>
 
-    <main>
+    <main role="main">
       <div>
 
       <h1>Helper Classes</h1>
@@ -74,19 +73,19 @@
       <hr />
 
       <h3>CSS</h3>
-      <h3 class="show-Code" style="color:#f00">
+      <h3 class="show-code" style="color:#f00">
           The code is right here
         </h3>
-      <code style="font-size:12px">
-      .txt-Center {text-align:center}<br />
-      .txt-Left {text-align:left}<br />
-      .txt-Right  {text-align:right}<br />
-      .txt-Just {text-align:justify}<br />
+      <code style="font-size: 12px">
+      .txt-center {text-align:center}<br />
+      .txt-left {text-align:left}<br />
+      .txt-right  {text-align:right}<br />
+      .txt-just {text-align:justify}<br />
       <br />
       <br />
-      .float-Left   {float:left}<br />
-      .float-Right  {float:right}<br />
-      .float-None   {float:none}<br />
+      .float-left   {float:left}<br />
+      .float-right  {float:right}<br />
+      .float-none   {float:none}<br />
       .clear      {clear:both}<br />
       .clearfix   {@include clearfix}<br />
       </code>
@@ -95,12 +94,12 @@
 
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <p>
-        <a href="index.html" title="Back to the Ground Floor Index">Ground Floor</a> was built by
-        <a href="http://www.scottohara.me/" title="shameless linking">Scott O'Hara</a> for
-        <a href="http://www.neocities.org" title="NeoCities.org  Build a more interesting web">NeoCities</a>.
-        It is derived from the <a href="https://github.com/scottaohara/Brass-Tacks" title="HTML5/SCSS framework">Brass Tacks</a>, a HTML5/SCSS framework.
+        <a href="index.html">Ground Floor</a> was built by
+        <a href="http://www.scottohara.me/">Scott O'Hara</a> for
+        <a href="http://www.neocities.org">NeoCities</a>.
+        It is a stripped down version of <a href="https://github.com/scottaohara/Brass-Tacks">Brass Tacks</a>.
       </p>
     </footer>
   </body>

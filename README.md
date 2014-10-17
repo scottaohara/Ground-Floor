@@ -39,7 +39,7 @@ standard styling.
 
 ### View it Live
 
-At <a href="http://groundfloor.neocities.org/" title="Live example of Ground Floor w/code snippets">http://groundfloor.neocities.org/</a>
+At <a href="http://groundfloor.neocities.org/">http://groundfloor.neocities.org/</a>
 
 
 ### Built With

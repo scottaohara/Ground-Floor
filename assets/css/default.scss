@@ -1,33 +1,37 @@
 /*
-  *******************************************************************************************************
+  *************************************************************************************************
+  *
   * Ground Floor
   * by Scott O'Hara - @scottohara - scottohara.me  -  https://github.com/scottaohara
-  * v 1.5 - September 1, 2014
+  * v 1.6 - October 17, 2014
   *
-  * Ground Floor is a trimmed down version of Brass Tacks, an OOCSS, SASS, HTML framework for rapid
-  * development of web projects.  Ground Floor takes many of the principals of Brass Tacks and applies
-  * them to basic HTML tags, for HTML that has been slightly more stylized than a basic reset / normalize.
+  * Ground Floor is a trimmed down version of Brass Tacks, an OOCSS, Sass framework
+  * for rapid development of web projects.  Ground Floor takes many of the principals of
+  * Brass Tacks and applies them to basic HTML tags, for HTML that has been slightly more
+  * stylized than a basic reset / normalize.
   *
-  *******************************************************************************************************
+  *************************************************************************************************
 */
+
 // Import Fonts
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic);
 
 // Variables and Mixins
-  @import '_helper-sass/project-vars';    // misc. layout and additional styling vars
-  @import '_base-sass/mixins';            // reusable code bases
+  @import
+  '_helper-sass/project-vars',    // misc. layout and additional styling vars
+  '_base-sass/mixins',            // reusable code bases
 
 // Base HTML Values
-  @import '_base-sass/base';              // standardizes the base styling of HTML elements
-  @import '_base-sass/typography';        // font sizing/families/styling
-  @import '_base-sass/tables';            // Base styling for table elements
-  @import '_base-sass/navs';              // Base nav element & children styling
-  @import '_base-sass/forms';             // Base form element & children styling
+  '_base-sass/base',              // standardizes the base styling of HTML elements
+  '_base-sass/typography',        // font sizing/families/styling
+  '_base-sass/tables',            // Base styling for table elements
+  '_base-sass/navs',              // Base nav element & children styling
+  '_base-sass/forms',             // Base form element & children styling
 
 // Easy Classes for extra styling
-  @import '_helper-sass/helper';          // Classes to extend others.
-  @import '_helper-sass/layout';          // Layout Classes (flexible grids)
-  @import '_helper-sass/buttons';         // Button Classes (also e
+  '_helper-sass/helper',          // Classes to extend others.
+  '_helper-sass/layout',          // Layout Classes (flexible grids)
+  '_helper-sass/buttons',         // Button Classes (also e
 
 // Styling Version
-  @import '_versions-sass/default';      // Default Styling
+  '_versions-sass/default';      // Default Styling

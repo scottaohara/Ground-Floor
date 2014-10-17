@@ -8,26 +8,24 @@
   color: $c-lighter;
   cursor: pointer;
   display: inline-block;
-  font: {
-    family: $brand, $arial;
-    size: $txt-base
-  };
+  font-family: $brand, $arial;
+  font-size: $txt-base;
   line-height: 1;
   padding: $spacing*2 $spacing*3;
   text-align: center;
-  text-decoration: none !important; // set to !important so if used on an <a> it will never have an underline
+  text-decoration: none !important; // set to !important so if used on an <a> it will never be underlined
   vertical-align: middle;
   -webkit-appearance: none;
 
   &.btn-pad {
-    padding:$spacing*2 $spacing*4
+    padding: $spacing*2 $spacing*4
   }
 
   &:hover,
   &:focus,
   &:active {
-    background:$c-darker;
-    color:$c-lighter;
+    background: $c-darker;
+    color: $c-lighter;
   }
 
   &:visited {
@@ -47,8 +45,8 @@
   &.btn-pad {
     padding: $spacing $spacing*3
   }
-
 }
+
 .btn-large {
   @extend %btn;
   font-size: $txt-h3;
@@ -57,8 +55,8 @@
   &.btn-pad {
     padding: $spacing*3 $spacing*5
   }
-
 }
+
 .btn-xlarge {
   @extend %btn;
   font-size: $txt-h2;
@@ -67,7 +65,6 @@
   &.btn-pad{
     padding: $spacing*4 $spacing*6
   }
-
 }
 
 .btn-wide {
@@ -110,7 +107,8 @@ input[type='submit'] {
 }
 
 .btn-negative,
-input[type='reset'] {
+input[type='reset'],
+button[type='reset'] {
   @extend %btn;
   background: $c-btn-negative;
   color: $c-lighter;
@@ -121,7 +119,8 @@ input[type='reset'] {
 }
 
 .btn-disable,
-.btn-disable:hover {
+.btn-disable:hover,
+[disabled] {
   @extend %btn;
   background: $c-disabled;
   border: 1px solid #eee;

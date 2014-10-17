@@ -1,14 +1,16 @@
 /*
-  *******************************************************************************************************
+  *************************************************************************************************
+  *
   * Ground Floor
   * by Scott O'Hara - @scottohara - scottohara.me  -  https://github.com/scottaohara
-  * v 1.5 - September 1, 2014
+  * v 1.6 - October 17, 2014
   *
-  * Ground Floor is a trimmed down version of Brass Tacks, an OOCSS, SASS, HTML framework for rapid
-  * development of web projects.  Ground Floor takes many of the principals of Brass Tacks and applies
-  * them to basic HTML tags, for HTML that has been slightly more stylized than a basic reset / normalize.
+  * Ground Floor is a trimmed down version of Brass Tacks, an OOCSS, SASS, HTML framework
+  * for rapid development of web projects.  Ground Floor takes many of the principals of
+  * Brass Tacks and applies them to basic HTML tags, for HTML that has been slightly more
+  * stylized than a basic reset / normalize.
   *
-  *******************************************************************************************************
+  *************************************************************************************************
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic);
 *,
@@ -62,21 +64,21 @@ hr {
 
 ::-moz-selection {
   background: #54a4a3;
-  color: #eeeeee;
+  color: #eee;
   text-shadow: none; }
 
 ::selection {
   background: #54a4a3;
-  color: #eeeeee;
+  color: #eee;
   text-shadow: none; }
 
 a {
-  color: #3b8bba; }
+  color: #3B8BBA; }
   a:hover, a:focus, a:active {
     color: #22516d; }
 
 img {
-  color: red;
+  color: #f00;
   font-style: italic; }
 
 audio, img, object, embed, video {
@@ -167,14 +169,14 @@ q {
   quotes: '\201C' '\201D' '\2018' '\2019'; }
 
 abbr[title] {
-  border-bottom: 1px dotted #cccccc; }
+  border-bottom: 1px dotted #ccc; }
 
 abbr[title],
 dfn[title] {
   cursor: help; }
 
 mark {
-  background: yellow;
+  background: #ff0;
   color: #101010; }
 
 code, kbd, pre, samp {
@@ -235,16 +237,16 @@ table {
   background: #fafafa;
   border-collapse: collapse;
   border-spacing: 0;
-  border-bottom: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   font-size: 1em;
   width: 100%; }
   table tr {
-    border-top: 1px solid #cccccc; }
+    border-top: 1px solid #ccc; }
     table tr:nth-child(2n) {
-      background: #eeeeee; }
+      background: #eee; }
   table th, table td {
-    border-left: 1px solid #cccccc;
+    border-left: 1px solid #ccc;
     padding: 4px;
     text-align: left; }
 
@@ -279,7 +281,7 @@ nav {
 
 form {
   background: #fdfdfd;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 8px !important; }
 
 legend {
@@ -297,8 +299,8 @@ label {
 input[type='text'], textarea, input[type='date'],
 input[type='time'],
 input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='reset']):not([type='button']) {
-  background: white;
-  border: 1px solid #cccccc;
+  background: #fff;
+  border: 1px solid #ccc;
   font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.25;
   margin-bottom: 8px;
@@ -316,7 +318,7 @@ input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type=
   input[type='text'][required], textarea[required], input[required][type='date'],
   input[required][type='time'],
   input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='reset']):not([type='button'])[required] {
-    border-color: red; }
+    border-color: #f00; }
 
 textarea {
   display: block;
@@ -335,7 +337,7 @@ input[type='checkbox'] {
 
 /* Inputs not supported in all browsers */
 input[type='color'] {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin-bottom: 8px;
   padding: 0 4px;
@@ -430,7 +432,7 @@ input[type='time'] {
   width: 10%; }
 
 .block {
-  background: #cccccc;
+  background: #ccc;
   color: #333;
   padding: 4px; }
   .block > :last-child {
@@ -449,14 +451,16 @@ input[type='submit'],
 .btn-action-3:visited,
 .btn-negative,
 input[type='reset'],
+button[type='reset'],
 .btn-disable,
-.btn-disable:hover {
+.btn-disable:hover,
+[disabled] {
   -moz-transition: all 0.25s ease-in-out 0s;
   -ms-transition: all 0.25s ease-in-out 0s;
   -o-transition: all 0.25s ease-in-out 0s;
   -webkit-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
-  background: #444444;
+  background: #444;
   color: #f8f8f8;
   cursor: pointer;
   display: inline-block;
@@ -479,7 +483,8 @@ input[type='reset'],
   .btn-pad.btn-action-3,
   .btn-pad.btn-negative,
   input.btn-pad[type='reset'],
-  .btn-pad.btn-disable {
+  .btn-pad.btn-disable,
+  .btn-pad[disabled] {
     padding: 8px 16px; }
   .btn:hover, .btn:focus, .btn:active,
   .btn-small:hover,
@@ -493,6 +498,7 @@ input[type='reset'],
   .btn-negative:hover,
   input[type='reset']:hover,
   .btn-disable:hover,
+  [disabled]:hover,
   .btn-small:focus,
   .btn-large:focus,
   .btn-xlarge:focus,
@@ -504,6 +510,7 @@ input[type='reset'],
   .btn-negative:focus,
   input[type='reset']:focus,
   .btn-disable:focus,
+  [disabled]:focus,
   .btn-small:active,
   .btn-large:active,
   .btn-xlarge:active,
@@ -514,7 +521,8 @@ input[type='reset'],
   .btn-action-3:active,
   .btn-negative:active,
   input[type='reset']:active,
-  .btn-disable:active {
+  .btn-disable:active,
+  [disabled]:active {
     background: #101010;
     color: #f8f8f8; }
   .btn:visited,
@@ -528,7 +536,8 @@ input[type='reset'],
   .btn-action-3:visited,
   .btn-negative:visited,
   input[type='reset']:visited,
-  .btn-disable:visited {
+  .btn-disable:visited,
+  [disabled]:visited {
     color: #f8f8f8 !important; }
 
 .btn-small {
@@ -555,7 +564,7 @@ input[type='reset'],
 .btn-action,
 button,
 input[type='submit'] {
-  background: #3b8bba; }
+  background: #3B8BBA; }
   .btn-action:hover,
   button:hover,
   input[type='submit']:hover {
@@ -576,25 +585,29 @@ input[type='submit'] {
     background: #833332; }
 
 .btn-negative,
-input[type='reset'] {
-  background: #aaaaaa;
+input[type='reset'],
+button[type='reset'] {
+  background: #aaa;
   color: #f8f8f8; }
   .btn-negative:hover,
-  input[type='reset']:hover {
+  input[type='reset']:hover,
+  button[type='reset']:hover {
     background: #848484; }
 
 .btn-disable,
-.btn-disable:hover {
+.btn-disable:hover,
+[disabled] {
   background: #fafafa;
   border: 1px solid #eee;
-  color: #444444;
+  color: #444;
   cursor: default; }
   .btn-disable:visited,
-  .btn-disable:hover:visited {
-    color: #444444 !important; }
+  .btn-disable:hover:visited,
+  [disabled]:visited {
+    color: #444 !important; }
 
 body {
-  background: white;
+  background: #fff;
   letter-spacing: .01em;
   line-height: 1.5; }
 
@@ -628,3 +641,5 @@ li > samp {
 footer {
   background: #eee;
   font-size: .9em; }
+
+/*# sourceMappingURL=default.css.map */

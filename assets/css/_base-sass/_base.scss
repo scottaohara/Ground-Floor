@@ -74,9 +74,12 @@ hr {
 // Links
 a {
   color: $c-link;
+
   &:hover,
   &:focus,
-  &:active  {color:darken($c-link, 20%)}
+  &:active  {
+    color: darken($c-link, 20%);
+  }
 }
 
 @import 'base-media';   // Styling for base media elements
