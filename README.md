@@ -1,5 +1,7 @@
 # Ground Floor
 
+Note: Ground Floor is being placed into archive status, as it is no longer maintained.  
+
 ## Basic Styling of HTML elements
 
 ### What is Ground Floor?
